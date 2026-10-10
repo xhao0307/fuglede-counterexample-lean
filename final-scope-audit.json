@@ -1,0 +1,308 @@
+{
+  "status": "passed_full_two_dimensional_scope_and_frozen_import_audit",
+  "checked_on": "2026-10-10 Asia/Shanghai",
+  "review_type": "Independent read-only whole-scope audit; no mathematical sources modified.",
+  "mathlib_revision": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "lean_version": "4.34.1",
+  "canonical_reference": {
+    "repository_revision": "a924684979d41f543898ec43b940b74e124315d9",
+    "files": [
+      {
+        "path": "<LOCAL_WORKSPACE>/work/formal-conjectures/FormalConjecturesForMathlib/Analysis/Fourier/SpectralSets.lean",
+        "sha256": "1afb10b20fd411cefd9fd06b14abd18bf19a32a0614a02637b7f3267875470a8",
+        "url": "https://github.com/google-deepmind/formal-conjectures/blob/a924684979d41f543898ec43b940b74e124315d9/FormalConjecturesForMathlib/Analysis/Fourier/SpectralSets.lean"
+      },
+      {
+        "path": "<LOCAL_WORKSPACE>/work/formal-conjectures/FormalConjectures/Wikipedia/Fuglede.lean",
+        "sha256": "6b494a45baae84a4d0aae2f7d65179d434ecbca7e21e347d2ddc6d7c8c74bd5b",
+        "url": "https://github.com/google-deepmind/formal-conjectures/blob/a924684979d41f543898ec43b940b74e124315d9/FormalConjectures/Wikipedia/Fuglede.lean"
+      }
+    ]
+  },
+  "canonical_fidelity": [
+    {
+      "definition": "exponentialCharacter",
+      "result": "Exact exp(2πI*sum_i ξ_i*x_i) on Fin d→R, same as Google definition."
+    },
+    {
+      "definition": "spectralPair",
+      "result": "Nullmeasurable Ω, positive finite volume; true complex Lp exponent2 of restricted Lebesgue volume; orthogonality for distinct spectrum frequencies and topologicalClosure of complex span equals top. No finite-table replacement."
+    },
+    {
+      "definition": "tilesByTranslation",
+      "result": "An arbitrary countable set T of real translations, a.e. full-space cover and pairwise a.e. disjointness. No integer, lattice, or periodic restriction on T."
+    },
+    {
+      "definition": "FugledeConjectureFor",
+      "result": "For every bounded measurable positive-volume Ω in dimensiond, isSpectral Ω iff tilesByTranslation Ω. Same mathematical quantifiers as Google Fuglede.Wikipedia definition, with local namespace wrapping and bound-variable renaming."
+    }
+  ],
+  "actual_witness": {
+    "omega": "FugledeConcrete.omega = FugledeCube.cubeUnion FugledeConcrete.vectorBlock",
+    "finite_point_set": "Integer representatives of the same actual60point Aplus, copied over a97×97 grid of origins(60j1,12j2), and embedded into Fin2→Z via toVec.",
+    "point_count": 564540,
+    "volume": 564540,
+    "bounded": true,
+    "measurable": true,
+    "positive_and_finite_volume": true,
+    "same_omega_spectral_and_nontile": true
+  },
+  "spectrum": {
+    "actual_definition": "Set.range (fun p : FugledeConcreteSpectrum.Index × (Fin2→Z) => FugledeConcreteSpectrum.frequency p.1 + FugledeCube.intVec p.2)",
+    "all_integer_shifts_included": true,
+    "not_only_finite_frequency_data": true,
+    "characters_are_actual_canonical_exp": true
+  },
+  "discharged_generic_inputs": [
+    {
+      "generic_lemma": "FugledeOrthogonality.e_shifted_inner_eq_zero",
+      "input": "Actual finite Gram of base real frequencies on integer point set",
+      "discharge": "FugledeConcreteSpectrum.finite_gram → final finite_gram_as_card, no mathematical premise."
+    },
+    {
+      "generic_lemma": "FugledeSpectralBridge.spectrum_closedSpan_top",
+      "input": "Every finite vector admits expansion in actual real characters",
+      "discharge": "FugledeConcreteSpectrum.finite_expansion from closed seed97_every_function and exact point-image equality, no mathematical premise."
+    },
+    {
+      "generic_lemma": "FugledeFourier.ae_eq_zero_of_integer_fourier_integrals",
+      "input": "Ordinary MemLp weighted slice with all integer Fourier integrals zero",
+      "discharge": "SpectralSlices.weightedSlices_memLp plus full spectrum orthogonal-complement hypothesis in SpectralCubeBridge, then actual finite expansion detects each slice zero."
+    },
+    {
+      "generic_lemma": "FugledeTransfer.sixty_point_block97_nontiling",
+      "input": "The actual60point finite set has no tiling complement",
+      "discharge": "FugledeNontile.Aplus_no_complement, with exact seed Aplus equality and literal card60; no assumption of the full Euclidean nontiling bridge."
+    }
+  ],
+  "analytic_completeness_review": "Weighted slice integrability is proved for true union L2 functions. Every integer shift supplies the corresponding actual Fourier coefficient. Actual torus transport, Ico/Ioc a.e. equivalence, HilbertBasis Fourier completeness and finite expansion yield zero slices, zero unionLp element, and the closed-span orthogonal-complement criterion.",
+  "nontiling_review": "Any canonical countable a.e. real tiling transfers through a single a.e.-good grid sampling point to a genuine arbitrary integer-lattice unique-representation tiling. Quantitative block97 rectangle counting descends such a tiling to a finite complement of the actual60point set, contradicted by the universal common-complement parity/layer theorem. No periodicity or discreteness of realT was assumed.",
+  "final_declarations_expected": [
+    "FugledeCounterexample.omega_spectralPair",
+    "FugledeCounterexample.exists_bounded_measurable_spectral_nontile",
+    "FugledeCounterexample.not_FugledeConjectureFor_two",
+    "FugledeCounterexample.completeTwoDimensionalTarget",
+    "FugledeCounterexample.not_joint_dimension_one_and_two"
+  ],
+  "final_extra_mathematical_premises": [],
+  "kernel_verification": {
+    "status": "passed",
+    "method": "Independent Lean stdin import of frozen compiled final module; exact type-annotated examples require each final theorem with no mathematical argument. Printed canonical definitions and actual theorem types, plus all five transitive axiom lists.",
+    "exit_code": 0,
+    "warning_as_error": true,
+    "debug_skipKernelTC": false,
+    "source_hash_matched": true,
+    "olean_hash_matched": true,
+    "lean_stdin_source": "import FugledeCounterexample\nset_option debug.skipKernelTC false\nset_option pp.proofs false\nopen Set MeasureTheory\nexample : FugledeTarget.spectralPair FugledeConcrete.omega FugledeCounterexample.spectrum :=\n  FugledeCounterexample.omega_spectralPair\nexample : ∃ Ω : Set (Fin 2 → ℝ), Bornology.IsBounded Ω ∧ MeasurableSet Ω ∧\n    0 < volume Ω ∧ volume Ω ≠ ⊤ ∧ FugledeTarget.isSpectral Ω ∧\n    ¬ FugledeTarget.tilesByTranslation Ω :=\n  FugledeCounterexample.exists_bounded_measurable_spectral_nontile\nexample : ¬ FugledeTarget.FugledeConjectureFor 2 :=\n  FugledeCounterexample.not_FugledeConjectureFor_two\nexample : FugledeTarget.CompleteTwoDimensionalTarget :=\n  FugledeCounterexample.completeTwoDimensionalTarget\nexample : ¬ (FugledeTarget.FugledeConjectureFor 1 ∧ FugledeTarget.FugledeConjectureFor 2) :=\n  FugledeCounterexample.not_joint_dimension_one_and_two\n#print FugledeTarget.spectralPair\n#print FugledeTarget.tilesByTranslation\n#print FugledeTarget.FugledeConjectureFor\n#print FugledeSpectralBridge.spectrum\n#print FugledeConcrete.omega\n#print FugledeCounterexample.omega_spectralPair\n#print FugledeCounterexample.exists_bounded_measurable_spectral_nontile\n#print FugledeCounterexample.not_FugledeConjectureFor_two\n#print FugledeCounterexample.completeTwoDimensionalTarget\n#print FugledeCounterexample.not_joint_dimension_one_and_two\n#print axioms FugledeCounterexample.omega_spectralPair\n#print axioms FugledeCounterexample.exists_bounded_measurable_spectral_nontile\n#print axioms FugledeCounterexample.not_FugledeConjectureFor_two\n#print axioms FugledeCounterexample.completeTwoDimensionalTarget\n#print axioms FugledeCounterexample.not_joint_dimension_one_and_two\n",
+    "stdout": "def FugledeTarget.spectralPair : {d : ℕ} → Set (Fin d → ℝ) → Set (Fin d → ℝ) → Prop :=\nfun {d} Ω Λ =>\n  NullMeasurableSet Ω volume ∧\n    0 < volume Ω ∧\n      ∃ (hΩ_finite : volume Ω ≠ ⊤),\n        have e := fun ξ => MemLp.toLp (FugledeTarget.exponentialCharacter ξ) ⋯;\n        (∀ ξ₁ ∈ Λ, ∀ ξ₂ ∈ Λ, ξ₁ ≠ ξ₂ → inner ℂ (e ξ₁) (e ξ₂) = 0) ∧\n          (Submodule.span ℂ (range fun ξ => e ↑ξ)).topologicalClosure = ⊤\ndef FugledeTarget.tilesByTranslation : {d : ℕ} → Set (Fin d → ℝ) → Prop :=\nfun {d} Ω =>\n  ∃ T,\n    T.Countable ∧\n      volume (univ \\ ⋃ t ∈ T, FugledeTarget.translateSet Ω t) = 0 ∧\n        ∀ {t₁ t₂ : Fin d → ℝ},\n          t₁ ∈ T → t₂ ∈ T → t₁ ≠ t₂ → volume (FugledeTarget.translateSet Ω t₁ ∩ FugledeTarget.translateSet Ω t₂) = 0\ndef FugledeTarget.FugledeConjectureFor : ℕ → Prop :=\nfun d =>\n  ∀ (Ω : Set (Fin d → ℝ)),\n    Bornology.IsBounded Ω →\n      MeasurableSet Ω → 0 < volume Ω → (FugledeTarget.isSpectral Ω ↔ FugledeTarget.tilesByTranslation Ω)\ndef FugledeSpectralBridge.spectrum.{u_1} : {d : ℕ} → {σ : Type u_1} → (σ → Fin d → ℝ) → Set (Fin d → ℝ) :=\nfun {d} {σ} freq => range fun p => freq p.1 + FugledeCube.intVec p.2\ndef FugledeConcrete.omega : Set (Fin 2 → ℝ) :=\nFugledeCube.cubeUnion FugledeConcrete.vectorBlock\ntheorem FugledeCounterexample.omega_spectralPair : FugledeTarget.spectralPair FugledeConcrete.omega\n  FugledeCounterexample.spectrum :=\n⋯\ntheorem FugledeCounterexample.exists_bounded_measurable_spectral_nontile : ∃ Ω,\n  Bornology.IsBounded Ω ∧\n    MeasurableSet Ω ∧ 0 < volume Ω ∧ volume Ω ≠ ⊤ ∧ FugledeTarget.isSpectral Ω ∧ ¬FugledeTarget.tilesByTranslation Ω :=\n⋯\ntheorem FugledeCounterexample.not_FugledeConjectureFor_two : ¬FugledeTarget.FugledeConjectureFor 2 :=\n⋯\ntheorem FugledeCounterexample.completeTwoDimensionalTarget : FugledeTarget.CompleteTwoDimensionalTarget :=\nFugledeCounterexample.not_FugledeConjectureFor_two\ntheorem FugledeCounterexample.not_joint_dimension_one_and_two : ¬(FugledeTarget.FugledeConjectureFor 1 ∧\n    FugledeTarget.FugledeConjectureFor 2) :=\n⋯\n'FugledeCounterexample.omega_spectralPair' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FugledeCounterexample.exists_bounded_measurable_spectral_nontile' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'FugledeCounterexample.not_FugledeConjectureFor_two' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FugledeCounterexample.completeTwoDimensionalTarget' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FugledeCounterexample.not_joint_dimension_one_and_two' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+    "stderr": "",
+    "command": [
+      "<LOCAL_WORKSPACE>/work/toolchains/lean-4.34.1-darwin_aarch64/bin/lake",
+      "env",
+      "/bin/sh",
+      "-c",
+      "export LEAN_PATH=\"<LOCAL_WORKSPACE>/work/fuglede-formal:$LEAN_PATH\"; lean -DwarningAsError=true --stdin"
+    ],
+    "working_directory": "<LOCAL_WORKSPACE>/work/mathlib4",
+    "fresh_final_source_compile_performed_by_this_agent": false,
+    "dynamic_source_compile_avoided": true,
+    "root_strict_final_source_compile_session": 90967,
+    "root_strict_final_source_compile_exit_code": 0,
+    "transitive_axioms": {
+      "FugledeCounterexample.omega_spectralPair": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "FugledeCounterexample.exists_bounded_measurable_spectral_nontile": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "FugledeCounterexample.not_FugledeConjectureFor_two": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "FugledeCounterexample.completeTwoDimensionalTarget": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "FugledeCounterexample.not_joint_dimension_one_and_two": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    "session_id": 37343,
+    "source_and_olean_hashes_still_matched_after_import": true
+  },
+  "source_snapshot": [
+    {
+      "file": "<LOCAL_WORKSPACE>/work/fuglede-formal/CanonicalDefinitions.lean",
+      "sha256": "2d6ff7d2676ec627ca2deffe21efa835c08a42a4963aca79e842cbbfdbdfb97a",
+      "line_count": 77,
+      "local_imports": [],
+      "forbidden_code_constructs": []
+    },
+    {
+      "file": "<LOCAL_WORKSPACE>/work/fuglede-formal/CubeSampling.lean",
+      "sha256": "9177c93eca664693ef1c37528549f6e99140f8b0a2b7f18c47a21cb28e1d4197",
+      "line_count": 132,
+      "local_imports": [],
+      "forbidden_code_constructs": []
+    },
+    {
+      "file": "<LOCAL_WORKSPACE>/work/fuglede-formal/CubeGeometry.lean",
+      "sha256": "6f87d46b08bdaa22f6c5ba52a9c812a2787845e770d12e1b1b43ce5fb0d5de46",
+      "line_count": 117,
+      "local_imports": [
+        "CubeSampling"
+      ],
+      "forbidden_code_constructs": []
+    },
+    {
+      "file": "<LOCAL_WORKSPACE>/work/fuglede-formal/FiniteNontile.lean",
+      "sha256": "31a0b7fba8612e5d202aaa95f50b1288ca0f3493e4db8935f9d2c6da5b76d8c3",
+      "line_count": 402,
+      "local_imports": [],
+      "forbidden_code_constructs": []
+    },
+    {
+      "file": "<LOCAL_WORKSPACE>/work/fuglede-formal/FiniteSpectralSeeds.lean",
+      "sha256": "5d0bb922c6909650910485cc2f12b22606dcf95e643cf65b12d92e086267081c",
+      "line_count": 357,
+      "local_imports": [],
+      "forbidden_code_constructs": []
+    },
+    {
+      "file": "<LOCAL_WORKSPACE>/work/fuglede-formal/FiniteSpectral.lean",
+      "sha256": "6841f5b2e3e849b1ea62d5ae8292c2e701b85196d41f0fbed5c6106b4ac55ef7",
+      "line_count": 74,
+      "local_imports": [
+        "FiniteSpectralSeeds",
+        "FiniteNontile"
+      ],
+      "forbidden_code_constructs": []
+    },
+    {
+      "file": "<LOCAL_WORKSPACE>/work/fuglede-formal/TilingTransfer.lean",
+      "sha256": "30ff463031f651c9ac265ab228728e0784023a352ad624a536ff7f84dc4233aa",
+      "line_count": 830,
+      "local_imports": [],
+      "forbidden_code_constructs": []
+    },
+    {
+      "file": "<LOCAL_WORKSPACE>/work/fuglede-formal/BlockSpectrum.lean",
+      "sha256": "c3f1491913030513de8f4ba60685c5bdcb2a094af3a05d855c9f6dae983460cc",
+      "line_count": 494,
+      "local_imports": [
+        "FiniteSpectralSeeds"
+      ],
+      "forbidden_code_constructs": []
+    },
+    {
+      "file": "<LOCAL_WORKSPACE>/work/fuglede-formal/ConcreteNontile.lean",
+      "sha256": "a18f5f3c307ec6aebaff7bfc5d33036e0fa31f32fc99aa5d0a3ff93fd5b96424",
+      "line_count": 133,
+      "local_imports": [
+        "FiniteNontile",
+        "TilingTransfer",
+        "CubeGeometry",
+        "CanonicalDefinitions"
+      ],
+      "forbidden_code_constructs": []
+    },
+    {
+      "file": "<LOCAL_WORKSPACE>/work/fuglede-formal/ConcreteSpectrum.lean",
+      "sha256": "59d3e6478853ff46fec6a96b2c2b077cbb9b810f6414f0b9fd0def26b4ebac4f",
+      "line_count": 121,
+      "local_imports": [
+        "BlockSpectrum",
+        "ConcreteNontile",
+        "FiniteSpectral"
+      ],
+      "forbidden_code_constructs": []
+    },
+    {
+      "file": "<LOCAL_WORKSPACE>/work/fuglede-formal/SpectralSlices.lean",
+      "sha256": "a37df2a8af1d436052fda3e1bb905a147c117386f03f2f79b863e023e93832f3",
+      "line_count": 190,
+      "local_imports": [
+        "CubeGeometry",
+        "CanonicalDefinitions"
+      ],
+      "forbidden_code_constructs": []
+    },
+    {
+      "file": "<LOCAL_WORKSPACE>/work/fuglede-formal/CubeCharacters.lean",
+      "sha256": "ce2ab35e55ff529c9413f44a579edb5cdbc43d8e5f56c1b69f4f6b3d11bf58f2",
+      "line_count": 135,
+      "local_imports": [
+        "SpectralSlices",
+        "FourierCube"
+      ],
+      "forbidden_code_constructs": []
+    },
+    {
+      "file": "<LOCAL_WORKSPACE>/work/fuglede-formal/FourierCube.lean",
+      "sha256": "2946ac794fcc883dd99ebb93ad606965813287b90574cd5002a5170f5a51a149",
+      "line_count": 140,
+      "local_imports": [
+        "CubeGeometry"
+      ],
+      "forbidden_code_constructs": []
+    },
+    {
+      "file": "<LOCAL_WORKSPACE>/work/fuglede-formal/CubeOrthogonality.lean",
+      "sha256": "cebf5bf1c55c4b20f4dcc2caf6a0e50014423fd65c121eb5ef51317dbe81e417",
+      "line_count": 191,
+      "local_imports": [
+        "FourierCube",
+        "SpectralSlices",
+        "CubeCharacters"
+      ],
+      "forbidden_code_constructs": []
+    },
+    {
+      "file": "<LOCAL_WORKSPACE>/work/fuglede-formal/SpectralCubeBridge.lean",
+      "sha256": "c9f358915ef874eb77c36fde2df583a98a30da74cffc966576a4bbaed5482b05",
+      "line_count": 175,
+      "local_imports": [
+        "SpectralSlices",
+        "FourierCube",
+        "CubeCharacters"
+      ],
+      "forbidden_code_constructs": []
+    },
+    {
+      "file": "<LOCAL_WORKSPACE>/work/fuglede-formal/FugledeCounterexample.lean",
+      "sha256": "27e08226448eb23f150ec7e95e48c6f98e1ce7bcce8b8b26d9add0b65c55aa44",
+      "line_count": 83,
+      "local_imports": [
+        "ConcreteNontile",
+        "ConcreteSpectrum",
+        "CubeOrthogonality",
+        "SpectralCubeBridge"
+      ],
+      "forbidden_code_constructs": []
+    }
+  ],
+  "findings": [
+    {
+      "severity": "resolved_verification",
+      "finding": "Initial deprecated if_pos/if_neg warning issue was resolved before root final strictcompile90967. Frozen final source and olean hashes matched before independent stdin import; all exact-type examples compiled and all final theorem transitive axioms are standard3 only."
+    }
+  ],
+  "limits": [
+    "The independent one-dimensional variant is not solved; dim2counterexample also refutes the conjunction of the dimension1and2 universal claims.",
+    "Only spectral⇒tile fails here. This already disproves the full dimension2 equivalence; a tile⇒spectral witness is not necessary for that negative answer.",
+    "Canonical definitions are faithfully copied into a local namespace. A direct Google theorem-name adapter/public submission remains separate.",
+    "No prize adjudication, mathematical novelty, publication acceptance, global priority absence, or external submission is asserted.",
+    "This import/type/axiom check does not replace a clean source rebuild; a separate worker is preparing that reproduction."
+  ],
+  "frozen_final_source_sha256": "27e08226448eb23f150ec7e95e48c6f98e1ce7bcce8b8b26d9add0b65c55aa44",
+  "frozen_final_olean_sha256": "34e4ee35ae49aebf8cdecb71acb479a04f784099e9d904d83940bff90706ccbf",
+  "reviewer_relationship": "Reviewer did not author the final assembly or ConcreteSpectrum/ConcreteNontile/BlockSpectrum. Reviewer authored several earlier finite/Fourier/orthogonality components; a separate worker is also reviewing the analytic source and performing fresh reproduction."
+}

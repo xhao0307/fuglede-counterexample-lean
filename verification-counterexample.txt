@@ -1,0 +1,7 @@
+'FugledeCounterexample.omega_spectralPair' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FugledeCounterexample.exists_bounded_measurable_spectral_nontile' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FugledeCounterexample.not_FugledeConjectureFor_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FugledeCounterexample.completeTwoDimensionalTarget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FugledeCounterexample.not_joint_dimension_one_and_two' depends on axioms: [propext, Classical.choice, Quot.sound]

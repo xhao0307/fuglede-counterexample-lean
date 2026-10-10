@@ -1,0 +1,1549 @@
+{
+  "status": "strict_independent_fresh_lake_build_and_axiom_audit_pass",
+  "project": "work/fuglede-submission-recheck",
+  "source_sha256": {
+    "CanonicalDefinitions.lean": "7f3031d86958b2fc445b762f4baec2391f14907437966ffb9d0b8dc17320ef9d",
+    "CubeSampling.lean": "9177c93eca664693ef1c37528549f6e99140f8b0a2b7f18c47a21cb28e1d4197",
+    "CubeGeometry.lean": "6f87d46b08bdaa22f6c5ba52a9c812a2787845e770d12e1b1b43ce5fb0d5de46",
+    "FiniteNontile.lean": "31a0b7fba8612e5d202aaa95f50b1288ca0f3493e4db8935f9d2c6da5b76d8c3",
+    "TilingTransfer.lean": "30ff463031f651c9ac265ab228728e0784023a352ad624a536ff7f84dc4233aa",
+    "FiniteSpectralSeeds.lean": "5d0bb922c6909650910485cc2f12b22606dcf95e643cf65b12d92e086267081c",
+    "FiniteSpectral.lean": "6841f5b2e3e849b1ea62d5ae8292c2e701b85196d41f0fbed5c6106b4ac55ef7",
+    "ConcreteNontile.lean": "a18f5f3c307ec6aebaff7bfc5d33036e0fa31f32fc99aa5d0a3ff93fd5b96424",
+    "BlockSpectrum.lean": "c3f1491913030513de8f4ba60685c5bdcb2a094af3a05d855c9f6dae983460cc",
+    "ConcreteSpectrum.lean": "59d3e6478853ff46fec6a96b2c2b077cbb9b810f6414f0b9fd0def26b4ebac4f",
+    "FourierCube.lean": "49fd4a091813738b540171acb075d831388881f5b14844757696d0340026b7f5",
+    "SpectralSlices.lean": "a37df2a8af1d436052fda3e1bb905a147c117386f03f2f79b863e023e93832f3",
+    "CubeCharacters.lean": "ce2ab35e55ff529c9413f44a579edb5cdbc43d8e5f56c1b69f4f6b3d11bf58f2",
+    "CubeOrthogonality.lean": "7dcd2a426ecdea4fcc7ec4fa2266fed3d33a1cf32681f3c839261450100b7c38",
+    "SpectralCubeBridge.lean": "c9f358915ef874eb77c36fde2df583a98a30da74cffc966576a4bbaed5482b05",
+    "FugledeCounterexample.lean": "27e08226448eb23f150ec7e95e48c6f98e1ce7bcce8b8b26d9add0b65c55aa44",
+    "Audit.lean": "e66f4ac7a5bf481d645f169156d9065bc959aa226853900450b77ac51e8b071a"
+  },
+  "all_release_source_hashes_match": true,
+  "own_build_tree_initially_absent": true,
+  "own_olean_copied": false,
+  "dependency_policy": "Existing pinned clean upstream dependency checkouts/build caches linked; no own project artifacts linked or copied. Third-party dependencies not claimed to be freshly source-built.",
+  "dependency_pins_verified": [
+    {
+      "name": "mathlib",
+      "revision": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+      "tracked_source_clean": true,
+      "path": "work/fuglede-reproduction/.lake/packages/mathlib"
+    },
+    {
+      "name": "plausible",
+      "revision": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+      "tracked_source_clean": true,
+      "path": "work/fuglede-reproduction/.lake/packages/plausible"
+    },
+    {
+      "name": "LeanSearchClient",
+      "revision": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+      "tracked_source_clean": true,
+      "path": "work/fuglede-reproduction/.lake/packages/LeanSearchClient"
+    },
+    {
+      "name": "importGraph",
+      "revision": "e928b72544873815af278d38681b31c0293588e3",
+      "tracked_source_clean": true,
+      "path": "work/fuglede-reproduction/.lake/packages/importGraph"
+    },
+    {
+      "name": "proofwidgets",
+      "revision": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+      "tracked_source_clean": true,
+      "path": "work/fuglede-reproduction/.lake/packages/proofwidgets"
+    },
+    {
+      "name": "aesop",
+      "revision": "355695d523e41d0554926416cba2a2b3544fbbc9",
+      "tracked_source_clean": true,
+      "path": "work/fuglede-reproduction/.lake/packages/aesop"
+    },
+    {
+      "name": "Qq",
+      "revision": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+      "tracked_source_clean": true,
+      "path": "work/fuglede-reproduction/.lake/packages/Qq"
+    },
+    {
+      "name": "batteries",
+      "revision": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+      "tracked_source_clean": true,
+      "path": "work/fuglede-reproduction/.lake/packages/batteries"
+    },
+    {
+      "name": "Cli",
+      "revision": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+      "tracked_source_clean": true,
+      "path": "work/fuglede-reproduction/.lake/packages/Cli"
+    }
+  ],
+  "strict_flags": [
+    "-DwarningAsError=true",
+    "-Ddebug.skipKernelTC=false"
+  ],
+  "command": [
+    "<LOCAL_TOOLCHAIN_RUNTIME>/lean-4.34.1-darwin_aarch64/bin/lake",
+    "build",
+    "FugledeCounterexample",
+    "Audit"
+  ],
+  "started_at_utc": "2026-10-10T09:28:35.489428+00:00",
+  "compiler_version": "Lean (version 4.34.1, arm64-apple-darwin24.6.0, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "actual_exit_code": 0,
+  "duration_seconds": 58.23169716700795,
+  "log": "work/fuglede-submission-recheck/recovered-lake-build.log",
+  "log_sha256": "502bdcfe6fd2156465bd9e25bc2e0094ad2d4d15b3027b4f3929f5ffc264bf85",
+  "source_sha256_after_build": {
+    "CanonicalDefinitions.lean": "7f3031d86958b2fc445b762f4baec2391f14907437966ffb9d0b8dc17320ef9d",
+    "CubeSampling.lean": "9177c93eca664693ef1c37528549f6e99140f8b0a2b7f18c47a21cb28e1d4197",
+    "CubeGeometry.lean": "6f87d46b08bdaa22f6c5ba52a9c812a2787845e770d12e1b1b43ce5fb0d5de46",
+    "FiniteNontile.lean": "31a0b7fba8612e5d202aaa95f50b1288ca0f3493e4db8935f9d2c6da5b76d8c3",
+    "TilingTransfer.lean": "30ff463031f651c9ac265ab228728e0784023a352ad624a536ff7f84dc4233aa",
+    "FiniteSpectralSeeds.lean": "5d0bb922c6909650910485cc2f12b22606dcf95e643cf65b12d92e086267081c",
+    "FiniteSpectral.lean": "6841f5b2e3e849b1ea62d5ae8292c2e701b85196d41f0fbed5c6106b4ac55ef7",
+    "ConcreteNontile.lean": "a18f5f3c307ec6aebaff7bfc5d33036e0fa31f32fc99aa5d0a3ff93fd5b96424",
+    "BlockSpectrum.lean": "c3f1491913030513de8f4ba60685c5bdcb2a094af3a05d855c9f6dae983460cc",
+    "ConcreteSpectrum.lean": "59d3e6478853ff46fec6a96b2c2b077cbb9b810f6414f0b9fd0def26b4ebac4f",
+    "FourierCube.lean": "49fd4a091813738b540171acb075d831388881f5b14844757696d0340026b7f5",
+    "SpectralSlices.lean": "a37df2a8af1d436052fda3e1bb905a147c117386f03f2f79b863e023e93832f3",
+    "CubeCharacters.lean": "ce2ab35e55ff529c9413f44a579edb5cdbc43d8e5f56c1b69f4f6b3d11bf58f2",
+    "CubeOrthogonality.lean": "7dcd2a426ecdea4fcc7ec4fa2266fed3d33a1cf32681f3c839261450100b7c38",
+    "SpectralCubeBridge.lean": "c9f358915ef874eb77c36fde2df583a98a30da74cffc966576a4bbaed5482b05",
+    "FugledeCounterexample.lean": "27e08226448eb23f150ec7e95e48c6f98e1ce7bcce8b8b26d9add0b65c55aa44",
+    "Audit.lean": "e66f4ac7a5bf481d645f169156d9065bc959aa226853900450b77ac51e8b071a"
+  },
+  "source_unchanged": true,
+  "all_17_modules_freshly_built": true,
+  "olean_sha256": {
+    "CanonicalDefinitions": "adfdebd1f19f7d09db579dbf803eac0f192b1eca818f5c00f5ae55216cb99385",
+    "CubeSampling": "2eb7fe02fcc0479fe6e37a1999e05ae1b27a1f3c431accb0ee95048c4cd10b6f",
+    "CubeGeometry": "eca314a67e4f62990fb45fcc71446dc662913b33bb435356817fe855cc8c07ba",
+    "FiniteNontile": "c683cc449b77e9f8c36f1bbc14149ecf6fd2752841567e4a45f4e5276bc2c9d0",
+    "TilingTransfer": "51d5df80178d2265319ef667d2cd45a1729101cbdeca3e4f79b67dfdc792982c",
+    "FiniteSpectralSeeds": "35215e809d33e19d45b06aa27edc16ce38ef15c7f3ee16dfa4ec40f8b03fe5d1",
+    "FiniteSpectral": "ef03876029af6b29f366c9178d9dbcc44bb81017e2efdc20e3b639d49063f044",
+    "ConcreteNontile": "4005c537738512750872206ffa97273fc8e3bd8c6ead2ad687599cbc89f39e29",
+    "BlockSpectrum": "e3afa4af50afb3482bd755603df1cc0860338882561ebbace1812ca70d7d13b9",
+    "ConcreteSpectrum": "5d5320705203938818aeea6719856f7327327f5df131d9216b04ddd717ca7e6c",
+    "FourierCube": "95206e36d4bcb07908ccbab20ab6b6bad3d49f9423c8cc78e07566842b86fffe",
+    "SpectralSlices": "4a0b22c99d2b8dd706192f839494672fa1c4e3356a75bbcbbcfc929f41ccaca8",
+    "CubeCharacters": "c39b67e7b8087c4bf3f459ac9352349e64549d577b78ccf7637fbc979ecd8097",
+    "CubeOrthogonality": "aea254855a34db40d636e59ff09197ae34d9ac00344bbb7fe9e2f7771c53ffbd",
+    "SpectralCubeBridge": "feabd31411dc4591dd52938a9ad5aa6e4b943d75d6cdbfef10419e2e3df398bb",
+    "FugledeCounterexample": "ddea713371f58589ee11b822a633f0af85e60ef5bc31e79867300590488fc126",
+    "Audit": "20781181f91807606b994570787e53b5f20a5720ebd5a5d03346e3705b8c4c9c"
+  },
+  "endpoint_axioms": {
+    "FugledeCounterexample.omega_spectralPair": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeCounterexample.omega_isSpectral": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeCounterexample.exists_bounded_measurable_spectral_nontile": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeCounterexample.not_FugledeConjectureFor_two": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeCounterexample.completeTwoDimensionalTarget": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeCounterexample.not_joint_dimension_one_and_two": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "all_6_endpoints_standard_axioms_only": true,
+  "completed_at_utc": "2026-10-10T09:29:33.723408+00:00",
+  "pass": true,
+  "lake_attempt": {
+    "command": [
+      "<LOCAL_WORKSPACE>/work/toolchains/lean-4.34.1-darwin_aarch64/bin/lake",
+      "build",
+      "FugledeCounterexample",
+      "Audit"
+    ],
+    "started_at_utc": "2026-10-10T09:19:10.433925+00:00",
+    "actual_exit_code": -15,
+    "duration_seconds": 156.94378937500005,
+    "log": "work/fuglede-submission-recheck/fresh-build.log",
+    "log_sha256": "a2d78c6e22f13790885fc5159e9d4fe734fe64f576003c84530e1bea8a783156",
+    "termination_reason": "Manually terminated own Lake PID 37747 after 156.94 seconds of toolchain module read stalls before any own proof module build. No source compilation error reported.",
+    "classification": "tool/file-IO issue, not mathematical failure",
+    "actual_terminal_session": 44107
+  },
+  "build_method": "Pinned Lean 4.34.1 standard Lake build from empty own project build tree; same-version runtime extracted outside Documents",
+  "lean_path": "<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/.lake/build/lib/lean:<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/.lake/packages/mathlib/.lake/build/lib/lean:<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/.lake/packages/plausible/.lake/build/lib/lean:<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/.lake/packages/LeanSearchClient/.lake/build/lib/lean:<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/.lake/packages/importGraph/.lake/build/lib/lean:<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/.lake/packages/proofwidgets/.lake/build/lib/lean:<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/.lake/packages/aesop/.lake/build/lib/lean:<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/.lake/packages/Qq/.lake/build/lib/lean:<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/.lake/packages/batteries/.lake/build/lib/lean:<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/.lake/packages/Cli/.lake/build/lib/lean",
+  "old_project_olean_on_lean_path": false,
+  "module_order": [
+    "CanonicalDefinitions",
+    "CubeSampling",
+    "CubeGeometry",
+    "FiniteNontile",
+    "TilingTransfer",
+    "FiniteSpectralSeeds",
+    "FiniteSpectral",
+    "ConcreteNontile",
+    "BlockSpectrum",
+    "ConcreteSpectrum",
+    "FourierCube",
+    "SpectralSlices",
+    "CubeCharacters",
+    "CubeOrthogonality",
+    "SpectralCubeBridge",
+    "FugledeCounterexample",
+    "Audit"
+  ],
+  "direct_build_started_at_utc": "2026-10-10T09:24:54.979481+00:00",
+  "direct_module_results": [
+    {
+      "module": "CanonicalDefinitions",
+      "command": [
+        "<LOCAL_TOOLCHAIN_RUNTIME>/lean-4.34.1-darwin_aarch64/bin/lean",
+        "-DwarningAsError=true",
+        "-Ddebug.skipKernelTC=false",
+        "-o",
+        "<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/.lake/build/lib/lean/CanonicalDefinitions.olean",
+        "<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/CanonicalDefinitions.lean"
+      ],
+      "actual_exit_code": 0,
+      "duration_seconds": 20.06621420799638
+    },
+    {
+      "module": "CubeSampling",
+      "command": [
+        "<LOCAL_TOOLCHAIN_RUNTIME>/lean-4.34.1-darwin_aarch64/bin/lean",
+        "-DwarningAsError=true",
+        "-Ddebug.skipKernelTC=false",
+        "-o",
+        "<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/.lake/build/lib/lean/CubeSampling.olean",
+        "<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/CubeSampling.lean"
+      ],
+      "actual_exit_code": 0,
+      "duration_seconds": 3.2172432920051506
+    },
+    {
+      "module": "CubeGeometry",
+      "command": [
+        "<LOCAL_TOOLCHAIN_RUNTIME>/lean-4.34.1-darwin_aarch64/bin/lean",
+        "-DwarningAsError=true",
+        "-Ddebug.skipKernelTC=false",
+        "-o",
+        "<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/.lake/build/lib/lean/CubeGeometry.olean",
+        "<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/CubeGeometry.lean"
+      ],
+      "actual_exit_code": 0,
+      "duration_seconds": 2.4820869579998543
+    },
+    {
+      "module": "FiniteNontile",
+      "command": [
+        "<LOCAL_TOOLCHAIN_RUNTIME>/lean-4.34.1-darwin_aarch64/bin/lean",
+        "-DwarningAsError=true",
+        "-Ddebug.skipKernelTC=false",
+        "-o",
+        "<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/.lake/build/lib/lean/FiniteNontile.olean",
+        "<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/FiniteNontile.lean"
+      ],
+      "actual_exit_code": 0,
+      "duration_seconds": 20.547910708002746
+    },
+    {
+      "module": "TilingTransfer",
+      "command": [
+        "<LOCAL_TOOLCHAIN_RUNTIME>/lean-4.34.1-darwin_aarch64/bin/lean",
+        "-DwarningAsError=true",
+        "-Ddebug.skipKernelTC=false",
+        "-o",
+        "<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/.lake/build/lib/lean/TilingTransfer.olean",
+        "<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/TilingTransfer.lean"
+      ],
+      "actual_exit_code": 0,
+      "duration_seconds": 4.896784041993669
+    },
+    {
+      "module": "FiniteSpectralSeeds",
+      "command": [
+        "<LOCAL_TOOLCHAIN_RUNTIME>/lean-4.34.1-darwin_aarch64/bin/lean",
+        "-DwarningAsError=true",
+        "-Ddebug.skipKernelTC=false",
+        "-o",
+        "<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/.lake/build/lib/lean/FiniteSpectralSeeds.olean",
+        "<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/FiniteSpectralSeeds.lean"
+      ],
+      "actual_exit_code": 0,
+      "duration_seconds": 13.432104917010292
+    },
+    {
+      "module": "FiniteSpectral",
+      "command": [
+        "<LOCAL_TOOLCHAIN_RUNTIME>/lean-4.34.1-darwin_aarch64/bin/lean",
+        "-DwarningAsError=true",
+        "-Ddebug.skipKernelTC=false",
+        "-o",
+        "<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/.lake/build/lib/lean/FiniteSpectral.olean",
+        "<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/FiniteSpectral.lean"
+      ],
+      "actual_exit_code": 0,
+      "duration_seconds": 10.725584792002337
+    },
+    {
+      "module": "ConcreteNontile",
+      "command": [
+        "<LOCAL_TOOLCHAIN_RUNTIME>/lean-4.34.1-darwin_aarch64/bin/lean",
+        "-DwarningAsError=true",
+        "-Ddebug.skipKernelTC=false",
+        "-o",
+        "<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/.lake/build/lib/lean/ConcreteNontile.olean",
+        "<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/ConcreteNontile.lean"
+      ],
+      "actual_exit_code": 0,
+      "duration_seconds": 11.402769167005317
+    },
+    {
+      "module": "BlockSpectrum",
+      "command": [
+        "<LOCAL_TOOLCHAIN_RUNTIME>/lean-4.34.1-darwin_aarch64/bin/lean",
+        "-DwarningAsError=true",
+        "-Ddebug.skipKernelTC=false",
+        "-o",
+        "<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/.lake/build/lib/lean/BlockSpectrum.olean",
+        "<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/BlockSpectrum.lean"
+      ],
+      "actual_exit_code": 0,
+      "duration_seconds": 11.713324166994425
+    },
+    {
+      "module": "ConcreteSpectrum",
+      "command": [
+        "<LOCAL_TOOLCHAIN_RUNTIME>/lean-4.34.1-darwin_aarch64/bin/lean",
+        "-DwarningAsError=true",
+        "-Ddebug.skipKernelTC=false",
+        "-o",
+        "<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/.lake/build/lib/lean/ConcreteSpectrum.olean",
+        "<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/ConcreteSpectrum.lean"
+      ],
+      "actual_exit_code": 0,
+      "duration_seconds": 11.781581707997248
+    },
+    {
+      "module": "FourierCube",
+      "command": [
+        "<LOCAL_TOOLCHAIN_RUNTIME>/lean-4.34.1-darwin_aarch64/bin/lean",
+        "-DwarningAsError=true",
+        "-Ddebug.skipKernelTC=false",
+        "-o",
+        "<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/.lake/build/lib/lean/FourierCube.olean",
+        "<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/FourierCube.lean"
+      ],
+      "actual_exit_code": 0,
+      "duration_seconds": 4.2548279159964295
+    },
+    {
+      "module": "SpectralSlices",
+      "command": [
+        "<LOCAL_TOOLCHAIN_RUNTIME>/lean-4.34.1-darwin_aarch64/bin/lean",
+        "-DwarningAsError=true",
+        "-Ddebug.skipKernelTC=false",
+        "-o",
+        "<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/.lake/build/lib/lean/SpectralSlices.olean",
+        "<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/SpectralSlices.lean"
+      ],
+      "actual_exit_code": 0,
+      "duration_seconds": 3.3566482500027632
+    },
+    {
+      "module": "CubeCharacters",
+      "command": [
+        "<LOCAL_TOOLCHAIN_RUNTIME>/lean-4.34.1-darwin_aarch64/bin/lean",
+        "-DwarningAsError=true",
+        "-Ddebug.skipKernelTC=false",
+        "-o",
+        "<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/.lake/build/lib/lean/CubeCharacters.olean",
+        "<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/CubeCharacters.lean"
+      ],
+      "actual_exit_code": 0,
+      "duration_seconds": 3.349708499998087
+    },
+    {
+      "module": "CubeOrthogonality",
+      "command": [
+        "<LOCAL_TOOLCHAIN_RUNTIME>/lean-4.34.1-darwin_aarch64/bin/lean",
+        "-DwarningAsError=true",
+        "-Ddebug.skipKernelTC=false",
+        "-o",
+        "<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/.lake/build/lib/lean/CubeOrthogonality.olean",
+        "<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/CubeOrthogonality.lean"
+      ],
+      "actual_exit_code": 0,
+      "duration_seconds": 6.452725292008836
+    },
+    {
+      "module": "SpectralCubeBridge",
+      "command": [
+        "<LOCAL_TOOLCHAIN_RUNTIME>/lean-4.34.1-darwin_aarch64/bin/lean",
+        "-DwarningAsError=true",
+        "-Ddebug.skipKernelTC=false",
+        "-o",
+        "<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/.lake/build/lib/lean/SpectralCubeBridge.olean",
+        "<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/SpectralCubeBridge.lean"
+      ],
+      "actual_exit_code": 0,
+      "duration_seconds": 7.9998379580065375
+    },
+    {
+      "module": "FugledeCounterexample",
+      "command": [
+        "<LOCAL_TOOLCHAIN_RUNTIME>/lean-4.34.1-darwin_aarch64/bin/lean",
+        "-DwarningAsError=true",
+        "-Ddebug.skipKernelTC=false",
+        "-o",
+        "<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/.lake/build/lib/lean/FugledeCounterexample.olean",
+        "<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/FugledeCounterexample.lean"
+      ],
+      "actual_exit_code": 0,
+      "duration_seconds": 7.850121250012307
+    },
+    {
+      "module": "Audit",
+      "command": [
+        "<LOCAL_TOOLCHAIN_RUNTIME>/lean-4.34.1-darwin_aarch64/bin/lean",
+        "-DwarningAsError=true",
+        "-Ddebug.skipKernelTC=false",
+        "-o",
+        "<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/.lake/build/lib/lean/Audit.olean",
+        "<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/Audit.lean"
+      ],
+      "actual_exit_code": 0,
+      "duration_seconds": 3.797579541002051
+    }
+  ],
+  "old_runtime_direct_attempt": {
+    "build_method": "Direct pinned Lean compiler, topological source order, fresh own output tree",
+    "lean_path": "<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/.lake/build/lib/lean:<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/.lake/packages/mathlib/.lake/build/lib/lean:<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/.lake/packages/plausible/.lake/build/lib/lean:<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/.lake/packages/LeanSearchClient/.lake/build/lib/lean:<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/.lake/packages/importGraph/.lake/build/lib/lean:<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/.lake/packages/proofwidgets/.lake/build/lib/lean:<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/.lake/packages/aesop/.lake/build/lib/lean:<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/.lake/packages/Qq/.lake/build/lib/lean:<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/.lake/packages/batteries/.lake/build/lib/lean:<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/.lake/packages/Cli/.lake/build/lib/lean",
+    "direct_build_started_at_utc": "2026-10-10T09:22:18.838659+00:00",
+    "direct_module_results": [
+      {
+        "module": "CanonicalDefinitions",
+        "command": [
+          "<LOCAL_WORKSPACE>/work/toolchains/lean-4.34.1-darwin_aarch64/bin/lean",
+          "-DwarningAsError=true",
+          "-Ddebug.skipKernelTC=false",
+          "-o",
+          "<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/.lake/build/lib/lean/CanonicalDefinitions.olean",
+          "<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/CanonicalDefinitions.lean"
+        ],
+        "actual_exit_code": -15,
+        "duration_seconds": 102.44212808398879
+      }
+    ],
+    "actual_exit_code": -15,
+    "duration_seconds": 102.44336754200049,
+    "log": "work/fuglede-submission-recheck/direct-build.log",
+    "log_sha256": "dcdec9411b579a2b3d74ba0dceebc04b2a584c16fd25081374abda58e0d93a19",
+    "termination_reason": "Own direct compiler PID 38004 terminated after 102 seconds of toolchain import reads, to switch to a fresh same-version runtime outside Documents cloud storage.",
+    "actual_terminal_session": 8504
+  },
+  "runtime_recovery": {
+    "method": "ditto -xk original pinned official release archive to new <LOCAL_TMP> directory",
+    "archive": "work/toolchains/lean-4.34.1-darwin_aarch64.zip",
+    "archive_bytes": 797037816,
+    "extraction_actual_exit_code": 0,
+    "runtime_path": "<LOCAL_TOOLCHAIN_RUNTIME>/lean-4.34.1-darwin_aarch64",
+    "verified_key_runtime_bytes": {
+      "bin/lean": {
+        "sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+        "matches_original_runtime": true
+      },
+      "lib/lean/libleanshared.dylib": {
+        "sha256": "6588b7e38450ea749006dcd90bbaea9393a5ca1b64727a2e7138f3c9427c2b50",
+        "matches_original_runtime": true
+      },
+      "lib/lean/libLake_shared.dylib": {
+        "sha256": "60a94628397814203d86428fa6015f9d844c4c4c74cda8667e687a4ea5b5f5ac",
+        "matches_original_runtime": true
+      },
+      "lib/lean/Lean/MetavarContext.ir.sig": {
+        "sha256": "6848972fe4127bdcc46bf4ce7091a3309613f701ad3523eb774fe24bb08a9a55",
+        "matches_original_runtime": true
+      }
+    },
+    "version": "Lean 4.34.1 commit 5045d0056413266e57c625dcd7c365b10e377c52",
+    "archive_initial_filesystem_flags": "compressed,dataless"
+  },
+  "all_printed_axioms": {
+    "FugledeCube.coordinate_membership": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeCube.sampling_membership": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeCube.integerTiles_of_unique_sampling": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeCube.integerTiles_of_countable_tiling": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeCube.measurableSet_cubeUnion": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeCube.cubeAt_pairwise_disjoint": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeCube.volume_cubeUnion": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeCube.isBounded_cubeUnion": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeNontile.row_parity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeNontile.quotient_parity_obstruction": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeNontile.no_common_complement": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeNontile.Aplus_no_complement": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeTransfer.packed_translates_card_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeTransfer.exists_avoiding_translates": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeTransfer.mem_meetingCenters": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeTransfer.translates_pairwise_disjoint": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeTransfer.local_partition_descends": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeTransfer.exists_large_counting_square": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeTransfer.card_boundaryRing": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeTransfer.block_tiling_meeting_card_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeTransfer.exists_ring_avoiding_origin": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeTransfer.periodic_block_card_lower": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeTransfer.observation_box_inside_block": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeTransfer.rectangular_tiling_descent": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeTransfer.quotient_cell_representatives": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeTransfer.latticeBlock_nontiling": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeTransfer.blockCopies_eq_latticeBlock": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeTransfer.card_blockCopies": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeTransfer.blockCopies_nontiling": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeTransfer.sixty_point_block97_nontiling": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeTransfer.card_translate": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeTransfer.mem_translate": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeTransfer.unique_center_of_direct_tiling": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeTransfer.counting_square_gap_of_large": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeTransfer.mem_rectangle": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeTransfer.card_rectangle": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeTransfer.block_translate_contained_of_meeting": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeTransfer.coordinate_cell_index_unique": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeTransfer.grid_cell_indices_unique": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeTransfer.grid_cell_inside_block": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeTransfer.coordinate_representative": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeTransfer.coordinate_block_decomposition": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeSeeds.product_character_gram": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeSeeds.actual_character_gram": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeSeeds.Aplus_Lplus_finite_spectral_pair": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeSeeds.every_function_expansion": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeSpectral.Aplus_eq_nontile": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeSpectral.finiteSpectralGram": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeSpectral.Aplus_Lplus_finite_spectral_pair": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeSpectral.every_function_expansion": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeSpectral.Aplus_no_complement": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeConcrete.pairBlock_nontile": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeConcrete.omega_nontile": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeConcrete.omega_volume": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeConcrete.omega_measurable": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeConcrete.omega_bounded": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeBlockSpectrum.grid_character_product": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeBlockSpectrum.grid_character_sum": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeBlockSpectrum.grid_character_gram": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeBlockSpectrum.replicated_gram_factor": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeBlockSpectrum.replicated_spectral_gram": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeBlockSpectrum.cis_add": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeBlockSpectrum.cis_int": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeBlockSpectrum.conj_cis_mul": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeBlockSpectrum.gridCharacter_eq_cis": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeBlockSpectrum.expanded_character_factor": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeBlockSpectrum.expanded_spectral_gram": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeBlockSpectrum.analysis_block_synthesis": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeBlockSpectrum.blockSynthesis_injective": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeBlockSpectrum.blockSynthesis_surjective": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeBlockSpectrum.every_expanded_function_expansion": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeBlockSpectrum.expandedPoint_injective_of_gram": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeBlockSpectrum.expandedFrequency_injective_of_gram": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeBlockSpectrum.baseCharacter_seedLift": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeBlockSpectrum.seed_base_gram": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeBlockSpectrum.seed_expanded_gram": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeBlockSpectrum.seed_every_expanded_function": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeBlockSpectrum.seedBlockPoint_injective": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeBlockSpectrum.seedBlockFrequency_injective": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeBlockSpectrum.seed97_gram": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeBlockSpectrum.seed97_every_function": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeConcreteSpectrum.point_injective": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeConcreteSpectrum.frequency_injective": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeConcreteSpectrum.seedBlockPoint_mem_pairBlock": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeConcreteSpectrum.point_mem_vectorBlock": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeConcreteSpectrum.point_image_card": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeConcreteSpectrum.point_image_eq_vectorBlock": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeConcreteSpectrum.character_at_point": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeConcreteSpectrum.finite_gram": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeConcreteSpectrum.finite_expansion": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeFourier.eq_zero_of_integer_fourier_integrals": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeFourier.ae_eq_zero_of_integer_fourier_integrals": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeFourier.torusMap_measurePreserving": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeFourier.pullback_fourierCoeff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeSlices.cube_translation_preserving": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeSlices.slice_memLp": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeSlices.weightedSlice_memLp": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeSlices.weightedSlices_memLp": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeSlices.weightedSlices_integrable": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeSlices.character_weight_memLp": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeSlices.integral_union_eq_sum_slices": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeSlices.integral_unionLp_eq_sum_slices": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeSlices.integral_character_weight_eq_integral_weightedSlices": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeCharacters.character_add_frequency": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeCharacters.character_add_point": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeCharacters.character_integer_integer": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeCharacters.character_frequency_shift": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeCharacters.character_conj_product": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeCharacters.weightedSlices_frequency_shift": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeCharacters.coefficient_eq_weightedSlices_fourier": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeOrthogonality.unitCube_integer_gram": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeOrthogonality.e_inner_integral": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeOrthogonality.integral_union_gram_factor": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeOrthogonality.e_shifted_gram": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeOrthogonality.e_shifted_inner_eq_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeOrthogonality.frequency_shift_injective": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeSpectralBridge.inner_e_eq_integral": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeSpectralBridge.finite_coefficients_detect_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeSpectralBridge.eq_zero_of_all_shifted_coefficients": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeSpectralBridge.spectrum_closedSpan_top": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeCounterexample.omega_spectralPair": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeCounterexample.exists_bounded_measurable_spectral_nontile": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeCounterexample.not_FugledeConjectureFor_two": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeCounterexample.completeTwoDimensionalTarget": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeCounterexample.not_joint_dimension_one_and_two": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeCounterexample.omega_isSpectral": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "receipt_validation": {
+    "method": "Lake exit 0, all 17 Built markers from initially absent own tree, source/release hashes before and after, six explicitly named final endpoint standard-axiom outputs, comment/string-excluded forbidden-token scan",
+    "actual_exit_code": 0,
+    "validated_at_utc": "2026-10-10T09:30:08.597286+00:00"
+  },
+  "direct_build_verified": {
+    "build_method": "Direct pinned Lean compiler, topological source order, fresh own output tree",
+    "lean_path": "<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/.lake/build/lib/lean:<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/.lake/packages/mathlib/.lake/build/lib/lean:<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/.lake/packages/plausible/.lake/build/lib/lean:<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/.lake/packages/LeanSearchClient/.lake/build/lib/lean:<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/.lake/packages/importGraph/.lake/build/lib/lean:<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/.lake/packages/proofwidgets/.lake/build/lib/lean:<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/.lake/packages/aesop/.lake/build/lib/lean:<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/.lake/packages/Qq/.lake/build/lib/lean:<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/.lake/packages/batteries/.lake/build/lib/lean:<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/.lake/packages/Cli/.lake/build/lib/lean",
+    "direct_build_started_at_utc": "2026-10-10T09:24:54.979481+00:00",
+    "direct_module_results": [
+      {
+        "module": "CanonicalDefinitions",
+        "command": [
+          "<LOCAL_TOOLCHAIN_RUNTIME>/lean-4.34.1-darwin_aarch64/bin/lean",
+          "-DwarningAsError=true",
+          "-Ddebug.skipKernelTC=false",
+          "-o",
+          "<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/.lake/build/lib/lean/CanonicalDefinitions.olean",
+          "<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/CanonicalDefinitions.lean"
+        ],
+        "actual_exit_code": 0,
+        "duration_seconds": 20.06621420799638
+      },
+      {
+        "module": "CubeSampling",
+        "command": [
+          "<LOCAL_TOOLCHAIN_RUNTIME>/lean-4.34.1-darwin_aarch64/bin/lean",
+          "-DwarningAsError=true",
+          "-Ddebug.skipKernelTC=false",
+          "-o",
+          "<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/.lake/build/lib/lean/CubeSampling.olean",
+          "<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/CubeSampling.lean"
+        ],
+        "actual_exit_code": 0,
+        "duration_seconds": 3.2172432920051506
+      },
+      {
+        "module": "CubeGeometry",
+        "command": [
+          "<LOCAL_TOOLCHAIN_RUNTIME>/lean-4.34.1-darwin_aarch64/bin/lean",
+          "-DwarningAsError=true",
+          "-Ddebug.skipKernelTC=false",
+          "-o",
+          "<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/.lake/build/lib/lean/CubeGeometry.olean",
+          "<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/CubeGeometry.lean"
+        ],
+        "actual_exit_code": 0,
+        "duration_seconds": 2.4820869579998543
+      },
+      {
+        "module": "FiniteNontile",
+        "command": [
+          "<LOCAL_TOOLCHAIN_RUNTIME>/lean-4.34.1-darwin_aarch64/bin/lean",
+          "-DwarningAsError=true",
+          "-Ddebug.skipKernelTC=false",
+          "-o",
+          "<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/.lake/build/lib/lean/FiniteNontile.olean",
+          "<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/FiniteNontile.lean"
+        ],
+        "actual_exit_code": 0,
+        "duration_seconds": 20.547910708002746
+      },
+      {
+        "module": "TilingTransfer",
+        "command": [
+          "<LOCAL_TOOLCHAIN_RUNTIME>/lean-4.34.1-darwin_aarch64/bin/lean",
+          "-DwarningAsError=true",
+          "-Ddebug.skipKernelTC=false",
+          "-o",
+          "<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/.lake/build/lib/lean/TilingTransfer.olean",
+          "<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/TilingTransfer.lean"
+        ],
+        "actual_exit_code": 0,
+        "duration_seconds": 4.896784041993669
+      },
+      {
+        "module": "FiniteSpectralSeeds",
+        "command": [
+          "<LOCAL_TOOLCHAIN_RUNTIME>/lean-4.34.1-darwin_aarch64/bin/lean",
+          "-DwarningAsError=true",
+          "-Ddebug.skipKernelTC=false",
+          "-o",
+          "<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/.lake/build/lib/lean/FiniteSpectralSeeds.olean",
+          "<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/FiniteSpectralSeeds.lean"
+        ],
+        "actual_exit_code": 0,
+        "duration_seconds": 13.432104917010292
+      },
+      {
+        "module": "FiniteSpectral",
+        "command": [
+          "<LOCAL_TOOLCHAIN_RUNTIME>/lean-4.34.1-darwin_aarch64/bin/lean",
+          "-DwarningAsError=true",
+          "-Ddebug.skipKernelTC=false",
+          "-o",
+          "<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/.lake/build/lib/lean/FiniteSpectral.olean",
+          "<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/FiniteSpectral.lean"
+        ],
+        "actual_exit_code": 0,
+        "duration_seconds": 10.725584792002337
+      },
+      {
+        "module": "ConcreteNontile",
+        "command": [
+          "<LOCAL_TOOLCHAIN_RUNTIME>/lean-4.34.1-darwin_aarch64/bin/lean",
+          "-DwarningAsError=true",
+          "-Ddebug.skipKernelTC=false",
+          "-o",
+          "<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/.lake/build/lib/lean/ConcreteNontile.olean",
+          "<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/ConcreteNontile.lean"
+        ],
+        "actual_exit_code": 0,
+        "duration_seconds": 11.402769167005317
+      },
+      {
+        "module": "BlockSpectrum",
+        "command": [
+          "<LOCAL_TOOLCHAIN_RUNTIME>/lean-4.34.1-darwin_aarch64/bin/lean",
+          "-DwarningAsError=true",
+          "-Ddebug.skipKernelTC=false",
+          "-o",
+          "<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/.lake/build/lib/lean/BlockSpectrum.olean",
+          "<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/BlockSpectrum.lean"
+        ],
+        "actual_exit_code": 0,
+        "duration_seconds": 11.713324166994425
+      },
+      {
+        "module": "ConcreteSpectrum",
+        "command": [
+          "<LOCAL_TOOLCHAIN_RUNTIME>/lean-4.34.1-darwin_aarch64/bin/lean",
+          "-DwarningAsError=true",
+          "-Ddebug.skipKernelTC=false",
+          "-o",
+          "<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/.lake/build/lib/lean/ConcreteSpectrum.olean",
+          "<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/ConcreteSpectrum.lean"
+        ],
+        "actual_exit_code": 0,
+        "duration_seconds": 11.781581707997248
+      },
+      {
+        "module": "FourierCube",
+        "command": [
+          "<LOCAL_TOOLCHAIN_RUNTIME>/lean-4.34.1-darwin_aarch64/bin/lean",
+          "-DwarningAsError=true",
+          "-Ddebug.skipKernelTC=false",
+          "-o",
+          "<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/.lake/build/lib/lean/FourierCube.olean",
+          "<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/FourierCube.lean"
+        ],
+        "actual_exit_code": 0,
+        "duration_seconds": 4.2548279159964295
+      },
+      {
+        "module": "SpectralSlices",
+        "command": [
+          "<LOCAL_TOOLCHAIN_RUNTIME>/lean-4.34.1-darwin_aarch64/bin/lean",
+          "-DwarningAsError=true",
+          "-Ddebug.skipKernelTC=false",
+          "-o",
+          "<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/.lake/build/lib/lean/SpectralSlices.olean",
+          "<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/SpectralSlices.lean"
+        ],
+        "actual_exit_code": 0,
+        "duration_seconds": 3.3566482500027632
+      },
+      {
+        "module": "CubeCharacters",
+        "command": [
+          "<LOCAL_TOOLCHAIN_RUNTIME>/lean-4.34.1-darwin_aarch64/bin/lean",
+          "-DwarningAsError=true",
+          "-Ddebug.skipKernelTC=false",
+          "-o",
+          "<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/.lake/build/lib/lean/CubeCharacters.olean",
+          "<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/CubeCharacters.lean"
+        ],
+        "actual_exit_code": 0,
+        "duration_seconds": 3.349708499998087
+      },
+      {
+        "module": "CubeOrthogonality",
+        "command": [
+          "<LOCAL_TOOLCHAIN_RUNTIME>/lean-4.34.1-darwin_aarch64/bin/lean",
+          "-DwarningAsError=true",
+          "-Ddebug.skipKernelTC=false",
+          "-o",
+          "<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/.lake/build/lib/lean/CubeOrthogonality.olean",
+          "<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/CubeOrthogonality.lean"
+        ],
+        "actual_exit_code": 0,
+        "duration_seconds": 6.452725292008836
+      },
+      {
+        "module": "SpectralCubeBridge",
+        "command": [
+          "<LOCAL_TOOLCHAIN_RUNTIME>/lean-4.34.1-darwin_aarch64/bin/lean",
+          "-DwarningAsError=true",
+          "-Ddebug.skipKernelTC=false",
+          "-o",
+          "<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/.lake/build/lib/lean/SpectralCubeBridge.olean",
+          "<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/SpectralCubeBridge.lean"
+        ],
+        "actual_exit_code": 0,
+        "duration_seconds": 7.9998379580065375
+      },
+      {
+        "module": "FugledeCounterexample",
+        "command": [
+          "<LOCAL_TOOLCHAIN_RUNTIME>/lean-4.34.1-darwin_aarch64/bin/lean",
+          "-DwarningAsError=true",
+          "-Ddebug.skipKernelTC=false",
+          "-o",
+          "<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/.lake/build/lib/lean/FugledeCounterexample.olean",
+          "<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/FugledeCounterexample.lean"
+        ],
+        "actual_exit_code": 0,
+        "duration_seconds": 7.850121250012307
+      },
+      {
+        "module": "Audit",
+        "command": [
+          "<LOCAL_TOOLCHAIN_RUNTIME>/lean-4.34.1-darwin_aarch64/bin/lean",
+          "-DwarningAsError=true",
+          "-Ddebug.skipKernelTC=false",
+          "-o",
+          "<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/.lake/build/lib/lean/Audit.olean",
+          "<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/Audit.lean"
+        ],
+        "actual_exit_code": 0,
+        "duration_seconds": 3.797579541002051
+      }
+    ],
+    "actual_exit_code": 0,
+    "duration_seconds": 147.34595258400077,
+    "log": "work/fuglede-submission-recheck/direct-build.log",
+    "log_sha256": "984e8192160aec970eb87be0e05803f57d8fa449839a4f406a011e573bccd362",
+    "olean_sha256": {
+      "CanonicalDefinitions": "299bc05ddbd18b177b944aea8756ee4be492baa00f7b2287570bfcea4a8a80d1",
+      "CubeSampling": "998a72fd743e0be9a703abc57b203161e84d10553636d3c8873861da029271a2",
+      "CubeGeometry": "d92eeb571125baa7b9d88bf1196387b3d2ced596a0f337c24da8532c912a00f0",
+      "FiniteNontile": "a3be5e484d4da6ec81a95b6e1dfea3eda55a03f3882862988637302dd15144f3",
+      "TilingTransfer": "97bbb79c5f1863905d9a0c968a33bae716fe9f8612b91705b7602d33b1731e5c",
+      "FiniteSpectralSeeds": "99285bdf2d41b845fe7253583bbd46dd5bb47ca1ac2670af0da711dbc7fa60a9",
+      "FiniteSpectral": "3ea15aba09c849fa6f168d3a5e418c2d65b0c6913ceb810e7081d0f742c4687c",
+      "ConcreteNontile": "5389ae6728bb576d86a578bfa3a4d83627d2e95789b83eb1931740d7a9cb1227",
+      "BlockSpectrum": "27ad1a6bb70594a25f5dba4e1c3e9a2f9afe6f9dd973e7a0fd0ceecfd5515573",
+      "ConcreteSpectrum": "046ca171ddadcf4d2816d0ef78ad4b0049cee2be1c2f1ecf7ed86346a406d410",
+      "FourierCube": "51a532c0057e9c66baf71167bae1890e28c5aa76e490c18e6736b0ff1fcb34eb",
+      "SpectralSlices": "d8b94cbb3242bbea72abe83fba3f7e1d448f5d830ff07f981d9fd843e8ce41e9",
+      "CubeCharacters": "543c47dec3e976dc40a09094ded72444d7fc226cc0b8bf106a744a6d8d9c9ff4",
+      "CubeOrthogonality": "b0598c5991316f8a8e13c19e0809b88a520983399a3acf8900cdb8932d98b855",
+      "SpectralCubeBridge": "53281365360e5e97444508dfb5f5791b1ed47fe8c72987132a9c2ae35c250fd3",
+      "FugledeCounterexample": "34e4ee35ae49aebf8cdecb71acb479a04f784099e9d904d83940bff90706ccbf",
+      "Audit": "cba82245dd046c13ffcfaf59a0690dcdf737c4b732b107c7af634d716fbb433e"
+    },
+    "endpoint_axioms": {
+      "FugledeCounterexample.omega_spectralPair": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "FugledeCounterexample.omega_isSpectral": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "FugledeCounterexample.exists_bounded_measurable_spectral_nontile": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "FugledeCounterexample.not_FugledeConjectureFor_two": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "FugledeCounterexample.completeTwoDimensionalTarget": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "FugledeCounterexample.not_joint_dimension_one_and_two": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    "receipt_validation": {
+      "validator": "work/fuglede-submission-recheck/validate_direct_receipt.py",
+      "actual_exit_code": 0,
+      "validated_at_utc": "2026-10-10T09:27:50.012521+00:00",
+      "build_runner_exit_code": 1,
+      "build_runner_false_negative": "The initial runner counted all 126 auxiliary/final printed theorem axiom entries and incorrectly required total == 6. Actual compiler exit codes for all 17 modules are 0. This validator selects the six explicit final endpoint names and confirms each has only standard axioms. Runner parser source corrected for subsequent runs.",
+      "all_printed_axiom_entry_count": 126
+    },
+    "actual_terminal_session": 6462
+  },
+  "recovered_lake": {
+    "command": [
+      "<LOCAL_TOOLCHAIN_RUNTIME>/lean-4.34.1-darwin_aarch64/bin/lake",
+      "build",
+      "FugledeCounterexample",
+      "Audit"
+    ],
+    "own_build_tree_initially_absent": true,
+    "own_direct_oleans_retained_outside_build_tree": ".lake/build-direct-verified",
+    "own_direct_oleans_on_lean_path": false,
+    "started_at_utc": "2026-10-10T09:28:35.489428+00:00",
+    "actual_exit_code": 0,
+    "duration_seconds": 58.23169716700795,
+    "log": "work/fuglede-submission-recheck/recovered-lake-build.log",
+    "log_sha256": "502bdcfe6fd2156465bd9e25bc2e0094ad2d4d15b3027b4f3929f5ffc264bf85",
+    "fresh_build_log_modules": {
+      "CanonicalDefinitions": true,
+      "CubeSampling": true,
+      "CubeGeometry": true,
+      "FiniteNontile": true,
+      "TilingTransfer": true,
+      "FiniteSpectralSeeds": true,
+      "FiniteSpectral": true,
+      "ConcreteNontile": true,
+      "BlockSpectrum": true,
+      "ConcreteSpectrum": true,
+      "FourierCube": true,
+      "SpectralSlices": true,
+      "CubeCharacters": true,
+      "CubeOrthogonality": true,
+      "SpectralCubeBridge": true,
+      "FugledeCounterexample": true,
+      "Audit": true
+    },
+    "all_17_modules_freshly_built": true,
+    "source_hashes_unchanged": true,
+    "endpoint_axioms": {
+      "FugledeCounterexample.omega_spectralPair": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "FugledeCounterexample.omega_isSpectral": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "FugledeCounterexample.exists_bounded_measurable_spectral_nontile": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "FugledeCounterexample.not_FugledeConjectureFor_two": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "FugledeCounterexample.completeTwoDimensionalTarget": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "FugledeCounterexample.not_joint_dimension_one_and_two": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    "pass": true,
+    "olean_sha256": {
+      "CanonicalDefinitions": "adfdebd1f19f7d09db579dbf803eac0f192b1eca818f5c00f5ae55216cb99385",
+      "CubeSampling": "2eb7fe02fcc0479fe6e37a1999e05ae1b27a1f3c431accb0ee95048c4cd10b6f",
+      "CubeGeometry": "eca314a67e4f62990fb45fcc71446dc662913b33bb435356817fe855cc8c07ba",
+      "FiniteNontile": "c683cc449b77e9f8c36f1bbc14149ecf6fd2752841567e4a45f4e5276bc2c9d0",
+      "TilingTransfer": "51d5df80178d2265319ef667d2cd45a1729101cbdeca3e4f79b67dfdc792982c",
+      "FiniteSpectralSeeds": "35215e809d33e19d45b06aa27edc16ce38ef15c7f3ee16dfa4ec40f8b03fe5d1",
+      "FiniteSpectral": "ef03876029af6b29f366c9178d9dbcc44bb81017e2efdc20e3b639d49063f044",
+      "ConcreteNontile": "4005c537738512750872206ffa97273fc8e3bd8c6ead2ad687599cbc89f39e29",
+      "BlockSpectrum": "e3afa4af50afb3482bd755603df1cc0860338882561ebbace1812ca70d7d13b9",
+      "ConcreteSpectrum": "5d5320705203938818aeea6719856f7327327f5df131d9216b04ddd717ca7e6c",
+      "FourierCube": "95206e36d4bcb07908ccbab20ab6b6bad3d49f9423c8cc78e07566842b86fffe",
+      "SpectralSlices": "4a0b22c99d2b8dd706192f839494672fa1c4e3356a75bbcbbcfc929f41ccaca8",
+      "CubeCharacters": "c39b67e7b8087c4bf3f459ac9352349e64549d577b78ccf7637fbc979ecd8097",
+      "CubeOrthogonality": "aea254855a34db40d636e59ff09197ae34d9ac00344bbb7fe9e2f7771c53ffbd",
+      "SpectralCubeBridge": "feabd31411dc4591dd52938a9ad5aa6e4b943d75d6cdbfef10419e2e3df398bb",
+      "FugledeCounterexample": "ddea713371f58589ee11b822a633f0af85e60ef5bc31e79867300590488fc126",
+      "Audit": "20781181f91807606b994570787e53b5f20a5720ebd5a5d03346e3705b8c4c9c"
+    },
+    "actual_terminal_session": 88351
+  },
+  "lake_standard_command_current_check_pass": true,
+  "new_olean_matches_release": {
+    "CanonicalDefinitions": true,
+    "CubeSampling": true,
+    "CubeGeometry": true,
+    "FiniteNontile": true,
+    "TilingTransfer": true,
+    "FiniteSpectralSeeds": true,
+    "FiniteSpectral": true,
+    "ConcreteNontile": true,
+    "BlockSpectrum": true,
+    "ConcreteSpectrum": true,
+    "FourierCube": true,
+    "SpectralSlices": true,
+    "CubeCharacters": true,
+    "CubeOrthogonality": true,
+    "SpectralCubeBridge": true,
+    "FugledeCounterexample": true,
+    "Audit": true
+  },
+  "forbidden_code_token_scan": {
+    "CanonicalDefinitions.lean": [],
+    "CubeSampling.lean": [],
+    "CubeGeometry.lean": [],
+    "FiniteNontile.lean": [],
+    "TilingTransfer.lean": [],
+    "FiniteSpectralSeeds.lean": [],
+    "FiniteSpectral.lean": [],
+    "ConcreteNontile.lean": [],
+    "BlockSpectrum.lean": [],
+    "ConcreteSpectrum.lean": [],
+    "FourierCube.lean": [],
+    "SpectralSlices.lean": [],
+    "CubeCharacters.lean": [],
+    "CubeOrthogonality.lean": [],
+    "SpectralCubeBridge.lean": [],
+    "FugledeCounterexample.lean": [],
+    "Audit.lean": []
+  },
+  "all_final_axioms_standard_only": true,
+  "actual_terminal_session": 88351
+}

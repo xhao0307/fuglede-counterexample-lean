@@ -1,0 +1,25 @@
+{
+  "only_comment_changes": true,
+  "changed_sources": {
+    "FourierCube.lean": {
+      "before_sha256": "2946ac794fcc883dd99ebb93ad606965813287b90574cd5002a5170f5a51a149",
+      "after_sha256": "49fd4a091813738b540171acb075d831388881f5b14844757696d0340026b7f5",
+      "non_comment_code_identical_ignoring_outer_whitespace": true
+    },
+    "CubeOrthogonality.lean": {
+      "before_sha256": "cebf5bf1c55c4b20f4dcc2caf6a0e50014423fd65c121eb5ef51317dbe81e417",
+      "after_sha256": "7dcd2a426ecdea4fcc7ec4fa2266fed3d33a1cf32681f3c839261450100b7c38",
+      "non_comment_code_identical_ignoring_outer_whitespace": true
+    },
+    "CanonicalDefinitions.lean": {
+      "before_sha256": "2d6ff7d2676ec627ca2deffe21efa835c08a42a4963aca79e842cbbfdbdfb97a",
+      "after_sha256": "7f3031d86958b2fc445b762f4baec2391f14907437966ffb9d0b8dc17320ef9d",
+      "non_comment_code_identical_ignoring_outer_whitespace": true
+    }
+  },
+  "proof_code_changed": false,
+  "release_rebuild_pending": false,
+  "non_authoritative_replayed_build_session": 67279,
+  "release_rebuild_verified": true,
+  "authoritative_build_session": 48874
+}

@@ -1,0 +1,216 @@
+COMPILE CanonicalDefinitions
+["<LOCAL_TOOLCHAIN_RUNTIME>/lean-4.34.1-darwin_aarch64/bin/lean", "-DwarningAsError=true", "-Ddebug.skipKernelTC=false", "-o", "<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/.lake/build/lib/lean/CanonicalDefinitions.olean", "<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/CanonicalDefinitions.lean"]
+MODULE_EXIT CanonicalDefinitions 0
+COMPILE CubeSampling
+["<LOCAL_TOOLCHAIN_RUNTIME>/lean-4.34.1-darwin_aarch64/bin/lean", "-DwarningAsError=true", "-Ddebug.skipKernelTC=false", "-o", "<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/.lake/build/lib/lean/CubeSampling.olean", "<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/CubeSampling.lean"]
+'FugledeCube.coordinate_membership' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FugledeCube.sampling_membership' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FugledeCube.integerTiles_of_unique_sampling' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FugledeCube.integerTiles_of_countable_tiling' depends on axioms: [propext, Classical.choice, Quot.sound]
+MODULE_EXIT CubeSampling 0
+COMPILE CubeGeometry
+["<LOCAL_TOOLCHAIN_RUNTIME>/lean-4.34.1-darwin_aarch64/bin/lean", "-DwarningAsError=true", "-Ddebug.skipKernelTC=false", "-o", "<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/.lake/build/lib/lean/CubeGeometry.olean", "<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/CubeGeometry.lean"]
+'FugledeCube.measurableSet_cubeUnion' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FugledeCube.cubeAt_pairwise_disjoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FugledeCube.volume_cubeUnion' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FugledeCube.isBounded_cubeUnion' depends on axioms: [propext, Classical.choice, Quot.sound]
+MODULE_EXIT CubeGeometry 0
+COMPILE FiniteNontile
+["<LOCAL_TOOLCHAIN_RUNTIME>/lean-4.34.1-darwin_aarch64/bin/lean", "-DwarningAsError=true", "-Ddebug.skipKernelTC=false", "-o", "<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/.lake/build/lib/lean/FiniteNontile.olean", "<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/FiniteNontile.lean"]
+'FugledeNontile.row_parity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FugledeNontile.quotient_parity_obstruction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FugledeNontile.no_common_complement' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FugledeNontile.Aplus_no_complement' depends on axioms: [propext, Classical.choice, Quot.sound]
+MODULE_EXIT FiniteNontile 0
+COMPILE TilingTransfer
+["<LOCAL_TOOLCHAIN_RUNTIME>/lean-4.34.1-darwin_aarch64/bin/lean", "-DwarningAsError=true", "-Ddebug.skipKernelTC=false", "-o", "<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/.lake/build/lib/lean/TilingTransfer.olean", "<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/TilingTransfer.lean"]
+'FugledeTransfer.packed_translates_card_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FugledeTransfer.exists_avoiding_translates' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FugledeTransfer.mem_meetingCenters' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FugledeTransfer.translates_pairwise_disjoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FugledeTransfer.local_partition_descends' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FugledeTransfer.exists_large_counting_square' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FugledeTransfer.card_boundaryRing' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FugledeTransfer.block_tiling_meeting_card_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FugledeTransfer.exists_ring_avoiding_origin' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FugledeTransfer.periodic_block_card_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FugledeTransfer.observation_box_inside_block' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FugledeTransfer.rectangular_tiling_descent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FugledeTransfer.quotient_cell_representatives' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FugledeTransfer.latticeBlock_nontiling' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FugledeTransfer.blockCopies_eq_latticeBlock' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FugledeTransfer.card_blockCopies' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FugledeTransfer.blockCopies_nontiling' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FugledeTransfer.sixty_point_block97_nontiling' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FugledeTransfer.card_translate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FugledeTransfer.mem_translate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FugledeTransfer.unique_center_of_direct_tiling' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FugledeTransfer.counting_square_gap_of_large' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FugledeTransfer.mem_rectangle' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FugledeTransfer.card_rectangle' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FugledeTransfer.block_translate_contained_of_meeting' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FugledeTransfer.coordinate_cell_index_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FugledeTransfer.grid_cell_indices_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FugledeTransfer.grid_cell_inside_block' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FugledeTransfer.coordinate_representative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FugledeTransfer.coordinate_block_decomposition' depends on axioms: [propext, Classical.choice, Quot.sound]
+MODULE_EXIT TilingTransfer 0
+COMPILE FiniteSpectralSeeds
+["<LOCAL_TOOLCHAIN_RUNTIME>/lean-4.34.1-darwin_aarch64/bin/lean", "-DwarningAsError=true", "-Ddebug.skipKernelTC=false", "-o", "<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/.lake/build/lib/lean/FiniteSpectralSeeds.olean", "<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/FiniteSpectralSeeds.lean"]
+'FugledeSeeds.product_character_gram' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FugledeSeeds.actual_character_gram' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FugledeSeeds.Aplus_Lplus_finite_spectral_pair' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FugledeSeeds.every_function_expansion' depends on axioms: [propext, Classical.choice, Quot.sound]
+MODULE_EXIT FiniteSpectralSeeds 0
+COMPILE FiniteSpectral
+["<LOCAL_TOOLCHAIN_RUNTIME>/lean-4.34.1-darwin_aarch64/bin/lean", "-DwarningAsError=true", "-Ddebug.skipKernelTC=false", "-o", "<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/.lake/build/lib/lean/FiniteSpectral.olean", "<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/FiniteSpectral.lean"]
+'FugledeSpectral.Aplus_eq_nontile' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FugledeSpectral.finiteSpectralGram' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FugledeSpectral.Aplus_Lplus_finite_spectral_pair' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FugledeSpectral.every_function_expansion' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FugledeSpectral.Aplus_no_complement' depends on axioms: [propext, Classical.choice, Quot.sound]
+MODULE_EXIT FiniteSpectral 0
+COMPILE ConcreteNontile
+["<LOCAL_TOOLCHAIN_RUNTIME>/lean-4.34.1-darwin_aarch64/bin/lean", "-DwarningAsError=true", "-Ddebug.skipKernelTC=false", "-o", "<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/.lake/build/lib/lean/ConcreteNontile.olean", "<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/ConcreteNontile.lean"]
+'FugledeConcrete.pairBlock_nontile' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FugledeConcrete.omega_nontile' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FugledeConcrete.omega_volume' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FugledeConcrete.omega_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FugledeConcrete.omega_bounded' depends on axioms: [propext, Classical.choice, Quot.sound]
+MODULE_EXIT ConcreteNontile 0
+COMPILE BlockSpectrum
+["<LOCAL_TOOLCHAIN_RUNTIME>/lean-4.34.1-darwin_aarch64/bin/lean", "-DwarningAsError=true", "-Ddebug.skipKernelTC=false", "-o", "<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/.lake/build/lib/lean/BlockSpectrum.olean", "<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/BlockSpectrum.lean"]
+'FugledeBlockSpectrum.grid_character_product' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FugledeBlockSpectrum.grid_character_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FugledeBlockSpectrum.grid_character_gram' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FugledeBlockSpectrum.replicated_gram_factor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FugledeBlockSpectrum.replicated_spectral_gram' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FugledeBlockSpectrum.cis_add' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FugledeBlockSpectrum.cis_int' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FugledeBlockSpectrum.conj_cis_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FugledeBlockSpectrum.gridCharacter_eq_cis' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FugledeBlockSpectrum.expanded_character_factor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FugledeBlockSpectrum.expanded_spectral_gram' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FugledeBlockSpectrum.analysis_block_synthesis' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FugledeBlockSpectrum.blockSynthesis_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FugledeBlockSpectrum.blockSynthesis_surjective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FugledeBlockSpectrum.every_expanded_function_expansion' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FugledeBlockSpectrum.expandedPoint_injective_of_gram' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FugledeBlockSpectrum.expandedFrequency_injective_of_gram' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FugledeBlockSpectrum.baseCharacter_seedLift' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FugledeBlockSpectrum.seed_base_gram' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FugledeBlockSpectrum.seed_expanded_gram' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FugledeBlockSpectrum.seed_every_expanded_function' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FugledeBlockSpectrum.seedBlockPoint_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FugledeBlockSpectrum.seedBlockFrequency_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FugledeBlockSpectrum.seed97_gram' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FugledeBlockSpectrum.seed97_every_function' depends on axioms: [propext, Classical.choice, Quot.sound]
+MODULE_EXIT BlockSpectrum 0
+COMPILE ConcreteSpectrum
+["<LOCAL_TOOLCHAIN_RUNTIME>/lean-4.34.1-darwin_aarch64/bin/lean", "-DwarningAsError=true", "-Ddebug.skipKernelTC=false", "-o", "<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/.lake/build/lib/lean/ConcreteSpectrum.olean", "<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/ConcreteSpectrum.lean"]
+'FugledeConcreteSpectrum.point_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FugledeConcreteSpectrum.frequency_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FugledeConcreteSpectrum.seedBlockPoint_mem_pairBlock' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FugledeConcreteSpectrum.point_mem_vectorBlock' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FugledeConcreteSpectrum.point_image_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FugledeConcreteSpectrum.point_image_eq_vectorBlock' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FugledeConcreteSpectrum.character_at_point' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FugledeConcreteSpectrum.finite_gram' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FugledeConcreteSpectrum.finite_expansion' depends on axioms: [propext, Classical.choice, Quot.sound]
+MODULE_EXIT ConcreteSpectrum 0
+COMPILE FourierCube
+["<LOCAL_TOOLCHAIN_RUNTIME>/lean-4.34.1-darwin_aarch64/bin/lean", "-DwarningAsError=true", "-Ddebug.skipKernelTC=false", "-o", "<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/.lake/build/lib/lean/FourierCube.olean", "<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/FourierCube.lean"]
+'FugledeFourier.eq_zero_of_integer_fourier_integrals' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FugledeFourier.ae_eq_zero_of_integer_fourier_integrals' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FugledeFourier.torusMap_measurePreserving' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FugledeFourier.pullback_fourierCoeff' depends on axioms: [propext, Classical.choice, Quot.sound]
+MODULE_EXIT FourierCube 0
+COMPILE SpectralSlices
+["<LOCAL_TOOLCHAIN_RUNTIME>/lean-4.34.1-darwin_aarch64/bin/lean", "-DwarningAsError=true", "-Ddebug.skipKernelTC=false", "-o", "<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/.lake/build/lib/lean/SpectralSlices.olean", "<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/SpectralSlices.lean"]
+'FugledeSlices.cube_translation_preserving' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FugledeSlices.slice_memLp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FugledeSlices.weightedSlice_memLp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FugledeSlices.weightedSlices_memLp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FugledeSlices.weightedSlices_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FugledeSlices.character_weight_memLp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FugledeSlices.integral_union_eq_sum_slices' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FugledeSlices.integral_unionLp_eq_sum_slices' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FugledeSlices.integral_character_weight_eq_integral_weightedSlices' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+MODULE_EXIT SpectralSlices 0
+COMPILE CubeCharacters
+["<LOCAL_TOOLCHAIN_RUNTIME>/lean-4.34.1-darwin_aarch64/bin/lean", "-DwarningAsError=true", "-Ddebug.skipKernelTC=false", "-o", "<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/.lake/build/lib/lean/CubeCharacters.olean", "<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/CubeCharacters.lean"]
+'FugledeCharacters.character_add_frequency' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FugledeCharacters.character_add_point' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FugledeCharacters.character_integer_integer' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FugledeCharacters.character_frequency_shift' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FugledeCharacters.character_conj_product' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FugledeCharacters.weightedSlices_frequency_shift' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FugledeCharacters.coefficient_eq_weightedSlices_fourier' depends on axioms: [propext, Classical.choice, Quot.sound]
+MODULE_EXIT CubeCharacters 0
+COMPILE CubeOrthogonality
+["<LOCAL_TOOLCHAIN_RUNTIME>/lean-4.34.1-darwin_aarch64/bin/lean", "-DwarningAsError=true", "-Ddebug.skipKernelTC=false", "-o", "<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/.lake/build/lib/lean/CubeOrthogonality.olean", "<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/CubeOrthogonality.lean"]
+'FugledeOrthogonality.unitCube_integer_gram' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FugledeOrthogonality.e_inner_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FugledeOrthogonality.integral_union_gram_factor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FugledeOrthogonality.e_shifted_gram' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FugledeOrthogonality.e_shifted_inner_eq_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FugledeOrthogonality.frequency_shift_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+MODULE_EXIT CubeOrthogonality 0
+COMPILE SpectralCubeBridge
+["<LOCAL_TOOLCHAIN_RUNTIME>/lean-4.34.1-darwin_aarch64/bin/lean", "-DwarningAsError=true", "-Ddebug.skipKernelTC=false", "-o", "<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/.lake/build/lib/lean/SpectralCubeBridge.olean", "<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/SpectralCubeBridge.lean"]
+'FugledeSpectralBridge.inner_e_eq_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FugledeSpectralBridge.finite_coefficients_detect_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FugledeSpectralBridge.eq_zero_of_all_shifted_coefficients' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FugledeSpectralBridge.spectrum_closedSpan_top' depends on axioms: [propext, Classical.choice, Quot.sound]
+MODULE_EXIT SpectralCubeBridge 0
+COMPILE FugledeCounterexample
+["<LOCAL_TOOLCHAIN_RUNTIME>/lean-4.34.1-darwin_aarch64/bin/lean", "-DwarningAsError=true", "-Ddebug.skipKernelTC=false", "-o", "<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/.lake/build/lib/lean/FugledeCounterexample.olean", "<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/FugledeCounterexample.lean"]
+'FugledeCounterexample.omega_spectralPair' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FugledeCounterexample.exists_bounded_measurable_spectral_nontile' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FugledeCounterexample.not_FugledeConjectureFor_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FugledeCounterexample.completeTwoDimensionalTarget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FugledeCounterexample.not_joint_dimension_one_and_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+MODULE_EXIT FugledeCounterexample 0
+COMPILE Audit
+["<LOCAL_TOOLCHAIN_RUNTIME>/lean-4.34.1-darwin_aarch64/bin/lean", "-DwarningAsError=true", "-Ddebug.skipKernelTC=false", "-o", "<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/.lake/build/lib/lean/Audit.olean", "<LOCAL_WORKSPACE>/work/fuglede-submission-recheck/Audit.lean"]
+def FugledeTarget.spectralPair : {d : ℕ} → Set (Fin d → ℝ) → Set (Fin d → ℝ) → Prop :=
+fun {d} Ω Λ =>
+  MeasureTheory.NullMeasurableSet Ω MeasureTheory.volume ∧
+    0 < MeasureTheory.volume Ω ∧
+      ∃ (hΩ_finite : MeasureTheory.volume Ω ≠ ⊤),
+        have e := fun ξ => MeasureTheory.MemLp.toLp (FugledeTarget.exponentialCharacter ξ) ⋯;
+        (∀ ξ₁ ∈ Λ, ∀ ξ₂ ∈ Λ, ξ₁ ≠ ξ₂ → inner ℂ (e ξ₁) (e ξ₂) = 0) ∧
+          (Submodule.span ℂ (Set.range fun ξ => e ↑ξ)).topologicalClosure = ⊤
+def FugledeTarget.FugledeConjectureFor : ℕ → Prop :=
+fun d =>
+  ∀ (Ω : Set (Fin d → ℝ)),
+    Bornology.IsBounded Ω →
+      MeasurableSet Ω → 0 < MeasureTheory.volume Ω → (FugledeTarget.isSpectral Ω ↔ FugledeTarget.tilesByTranslation Ω)
+def FugledeTarget.CompleteTwoDimensionalTarget : Prop :=
+¬FugledeTarget.FugledeConjectureFor 2
+FugledeCounterexample.omega_spectralPair :
+  FugledeTarget.spectralPair FugledeConcrete.omega FugledeCounterexample.spectrum
+'FugledeCounterexample.omega_spectralPair' depends on axioms: [propext, Classical.choice, Quot.sound]
+FugledeCounterexample.omega_isSpectral : FugledeTarget.isSpectral FugledeConcrete.omega
+'FugledeCounterexample.omega_isSpectral' depends on axioms: [propext, Classical.choice, Quot.sound]
+FugledeCounterexample.exists_bounded_measurable_spectral_nontile :
+  ∃ Ω,
+    Bornology.IsBounded Ω ∧
+      MeasurableSet Ω ∧
+        0 < MeasureTheory.volume Ω ∧
+          MeasureTheory.volume Ω ≠ ⊤ ∧ FugledeTarget.isSpectral Ω ∧ ¬FugledeTarget.tilesByTranslation Ω
+'FugledeCounterexample.exists_bounded_measurable_spectral_nontile' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+FugledeCounterexample.not_FugledeConjectureFor_two : ¬FugledeTarget.FugledeConjectureFor 2
+'FugledeCounterexample.not_FugledeConjectureFor_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+FugledeCounterexample.completeTwoDimensionalTarget : FugledeTarget.CompleteTwoDimensionalTarget
+'FugledeCounterexample.completeTwoDimensionalTarget' depends on axioms: [propext, Classical.choice, Quot.sound]
+FugledeCounterexample.not_joint_dimension_one_and_two :
+  ¬(FugledeTarget.FugledeConjectureFor 1 ∧ FugledeTarget.FugledeConjectureFor 2)
+'FugledeCounterexample.not_joint_dimension_one_and_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+MODULE_EXIT Audit 0

@@ -1,0 +1,332 @@
+{
+  "status": "source_semantic_review_passed_runtime_recheck_inconclusive",
+  "reviewed_at_utc": "2026-10-10T09:23:10.309236+00:00",
+  "reviewer": "final_semantic_review",
+  "review_kind": "Independent source/interface semantic review, release-source comparison, new direct Lean import/type/transitive-axiom check against existing independent reproduction outputs. This agent does not claim a new clean source rebuild.",
+  "primary_sources_directly_read": [
+    "CanonicalDefinitions.lean",
+    "FugledeCounterexample.lean",
+    "SpectralCubeBridge.lean",
+    "ConcreteNontile.lean",
+    "CubeSampling.lean",
+    "CubeGeometry.lean",
+    "FourierCube.lean",
+    "ConcreteSpectrum.lean"
+  ],
+  "additional_directly_read_interfaces": [
+    "TilingTransfer.rectangular_tiling_descent, latticeBlock_nontiling, blockCopies_nontiling, sixty_point_block97_nontiling",
+    "CubeOrthogonality genuine Gram transport and shifted orthogonality",
+    "SpectralSlices translation preserving and slice/weighted slice MemLp",
+    "CubeCharacters actual-frequency-shift and coefficient identity",
+    "BlockSpectrum seed97 Gram and every-function expansion",
+    "FiniteNontile universal Aplus_no_complement chain"
+  ],
+  "canonical_reference": {
+    "revision": "a924684979d41f543898ec43b940b74e124315d9",
+    "directly_read_files": [
+      "FormalConjecturesForMathlib/Analysis/Fourier/SpectralSets.lean",
+      "FormalConjectures/Wikipedia/Fuglede.lean"
+    ],
+    "definition_correspondence": "Same Euclidean exponential, true restricted L2 spectrality including topological closed-span completeness, arbitrary countable real AE tiling, and bounded measurable positive-volume quantifiers. Local namespace/formatting and bound-variable renaming only."
+  },
+  "semantic_findings": [
+    {
+      "check": "True L2 completeness",
+      "result": "Lp ℂ 2 over restricted Euclidean Lebesgue volume. Actual exp(2πi dot ξx), distinct-frequency orthogonality, complex span topological closure = top. Proved torus-to-half-open-cube Fourier transport, weighted slice MemLp, full integer frequency shifts, and actual finite expansion establish completeness."
+    },
+    {
+      "check": "All canonical real tilings excluded",
+      "result": "T is an arbitrary countable subset of R². AE whole-space covering and pairwise AE disjointness yield one good grid sampling point simultaneously over all integer shifts. Exact sampling proves genuine integer tiling, excluded by the 97-block quantitative descent. No integer, periodic, or discrete real T restriction is assumed."
+    },
+    {
+      "check": "Same nondegenerate witness",
+      "result": "Spectrality and nontiling use FugledeConcrete.omega = cubeUnion vectorBlock. Its boundedness, measurability, volume=564540, positive finite volume are proved."
+    },
+    {
+      "check": "No extra mathematical premises",
+      "result": "Generic finite Gram/expansion and finite nontiling inputs are instantiated by proved ConcreteSpectrum and FiniteNontile endpoints. Final theorem declarations have no extra mathematical arguments."
+    },
+    {
+      "check": "Scope",
+      "result": "Refutes full two-dimensional equivalence with a spectral-but-nontiling witness; also refutes conjunction of independent 1D and 2D claims. Independent 1D is unresolved. No tile-but-nonspectral witness is claimed here."
+    }
+  ],
+  "release_source_receipts": [
+    {
+      "module": "CanonicalDefinitions",
+      "release_source_sha256": "7f3031d86958b2fc445b762f4baec2391f14907437966ffb9d0b8dc17320ef9d",
+      "reproduction_source_sha256": "7f3031d86958b2fc445b762f4baec2391f14907437966ffb9d0b8dc17320ef9d",
+      "matches": true
+    },
+    {
+      "module": "CubeSampling",
+      "release_source_sha256": "9177c93eca664693ef1c37528549f6e99140f8b0a2b7f18c47a21cb28e1d4197",
+      "reproduction_source_sha256": "9177c93eca664693ef1c37528549f6e99140f8b0a2b7f18c47a21cb28e1d4197",
+      "matches": true
+    },
+    {
+      "module": "CubeGeometry",
+      "release_source_sha256": "6f87d46b08bdaa22f6c5ba52a9c812a2787845e770d12e1b1b43ce5fb0d5de46",
+      "reproduction_source_sha256": "6f87d46b08bdaa22f6c5ba52a9c812a2787845e770d12e1b1b43ce5fb0d5de46",
+      "matches": true
+    },
+    {
+      "module": "FiniteNontile",
+      "release_source_sha256": "31a0b7fba8612e5d202aaa95f50b1288ca0f3493e4db8935f9d2c6da5b76d8c3",
+      "reproduction_source_sha256": "31a0b7fba8612e5d202aaa95f50b1288ca0f3493e4db8935f9d2c6da5b76d8c3",
+      "matches": true
+    },
+    {
+      "module": "TilingTransfer",
+      "release_source_sha256": "30ff463031f651c9ac265ab228728e0784023a352ad624a536ff7f84dc4233aa",
+      "reproduction_source_sha256": "30ff463031f651c9ac265ab228728e0784023a352ad624a536ff7f84dc4233aa",
+      "matches": true
+    },
+    {
+      "module": "FiniteSpectralSeeds",
+      "release_source_sha256": "5d0bb922c6909650910485cc2f12b22606dcf95e643cf65b12d92e086267081c",
+      "reproduction_source_sha256": "5d0bb922c6909650910485cc2f12b22606dcf95e643cf65b12d92e086267081c",
+      "matches": true
+    },
+    {
+      "module": "FiniteSpectral",
+      "release_source_sha256": "6841f5b2e3e849b1ea62d5ae8292c2e701b85196d41f0fbed5c6106b4ac55ef7",
+      "reproduction_source_sha256": "6841f5b2e3e849b1ea62d5ae8292c2e701b85196d41f0fbed5c6106b4ac55ef7",
+      "matches": true
+    },
+    {
+      "module": "ConcreteNontile",
+      "release_source_sha256": "a18f5f3c307ec6aebaff7bfc5d33036e0fa31f32fc99aa5d0a3ff93fd5b96424",
+      "reproduction_source_sha256": "a18f5f3c307ec6aebaff7bfc5d33036e0fa31f32fc99aa5d0a3ff93fd5b96424",
+      "matches": true
+    },
+    {
+      "module": "BlockSpectrum",
+      "release_source_sha256": "c3f1491913030513de8f4ba60685c5bdcb2a094af3a05d855c9f6dae983460cc",
+      "reproduction_source_sha256": "c3f1491913030513de8f4ba60685c5bdcb2a094af3a05d855c9f6dae983460cc",
+      "matches": true
+    },
+    {
+      "module": "ConcreteSpectrum",
+      "release_source_sha256": "59d3e6478853ff46fec6a96b2c2b077cbb9b810f6414f0b9fd0def26b4ebac4f",
+      "reproduction_source_sha256": "59d3e6478853ff46fec6a96b2c2b077cbb9b810f6414f0b9fd0def26b4ebac4f",
+      "matches": true
+    },
+    {
+      "module": "FourierCube",
+      "release_source_sha256": "49fd4a091813738b540171acb075d831388881f5b14844757696d0340026b7f5",
+      "reproduction_source_sha256": "49fd4a091813738b540171acb075d831388881f5b14844757696d0340026b7f5",
+      "matches": true
+    },
+    {
+      "module": "SpectralSlices",
+      "release_source_sha256": "a37df2a8af1d436052fda3e1bb905a147c117386f03f2f79b863e023e93832f3",
+      "reproduction_source_sha256": "a37df2a8af1d436052fda3e1bb905a147c117386f03f2f79b863e023e93832f3",
+      "matches": true
+    },
+    {
+      "module": "CubeCharacters",
+      "release_source_sha256": "ce2ab35e55ff529c9413f44a579edb5cdbc43d8e5f56c1b69f4f6b3d11bf58f2",
+      "reproduction_source_sha256": "ce2ab35e55ff529c9413f44a579edb5cdbc43d8e5f56c1b69f4f6b3d11bf58f2",
+      "matches": true
+    },
+    {
+      "module": "CubeOrthogonality",
+      "release_source_sha256": "7dcd2a426ecdea4fcc7ec4fa2266fed3d33a1cf32681f3c839261450100b7c38",
+      "reproduction_source_sha256": "7dcd2a426ecdea4fcc7ec4fa2266fed3d33a1cf32681f3c839261450100b7c38",
+      "matches": true
+    },
+    {
+      "module": "SpectralCubeBridge",
+      "release_source_sha256": "c9f358915ef874eb77c36fde2df583a98a30da74cffc966576a4bbaed5482b05",
+      "reproduction_source_sha256": "c9f358915ef874eb77c36fde2df583a98a30da74cffc966576a4bbaed5482b05",
+      "matches": true
+    },
+    {
+      "module": "FugledeCounterexample",
+      "release_source_sha256": "27e08226448eb23f150ec7e95e48c6f98e1ce7bcce8b8b26d9add0b65c55aa44",
+      "reproduction_source_sha256": "27e08226448eb23f150ec7e95e48c6f98e1ce7bcce8b8b26d9add0b65c55aa44",
+      "matches": true
+    },
+    {
+      "module": "Audit",
+      "release_source_sha256": "e66f4ac7a5bf481d645f169156d9065bc959aa226853900450b77ac51e8b071a",
+      "reproduction_source_sha256": "e66f4ac7a5bf481d645f169156d9065bc959aa226853900450b77ac51e8b071a",
+      "matches": true
+    }
+  ],
+  "source_construct_scan": [
+    {
+      "file": "outputs/fuglede/Audit.lean",
+      "sha256": "e66f4ac7a5bf481d645f169156d9065bc959aa226853900450b77ac51e8b071a",
+      "forbidden_code_matches": {}
+    },
+    {
+      "file": "outputs/fuglede/BlockSpectrum.lean",
+      "sha256": "c3f1491913030513de8f4ba60685c5bdcb2a094af3a05d855c9f6dae983460cc",
+      "forbidden_code_matches": {}
+    },
+    {
+      "file": "outputs/fuglede/CanonicalDefinitions.lean",
+      "sha256": "7f3031d86958b2fc445b762f4baec2391f14907437966ffb9d0b8dc17320ef9d",
+      "forbidden_code_matches": {}
+    },
+    {
+      "file": "outputs/fuglede/ConcreteNontile.lean",
+      "sha256": "a18f5f3c307ec6aebaff7bfc5d33036e0fa31f32fc99aa5d0a3ff93fd5b96424",
+      "forbidden_code_matches": {}
+    },
+    {
+      "file": "outputs/fuglede/ConcreteSpectrum.lean",
+      "sha256": "59d3e6478853ff46fec6a96b2c2b077cbb9b810f6414f0b9fd0def26b4ebac4f",
+      "forbidden_code_matches": {}
+    },
+    {
+      "file": "outputs/fuglede/CubeCharacters.lean",
+      "sha256": "ce2ab35e55ff529c9413f44a579edb5cdbc43d8e5f56c1b69f4f6b3d11bf58f2",
+      "forbidden_code_matches": {}
+    },
+    {
+      "file": "outputs/fuglede/CubeGeometry.lean",
+      "sha256": "6f87d46b08bdaa22f6c5ba52a9c812a2787845e770d12e1b1b43ce5fb0d5de46",
+      "forbidden_code_matches": {}
+    },
+    {
+      "file": "outputs/fuglede/CubeOrthogonality.lean",
+      "sha256": "7dcd2a426ecdea4fcc7ec4fa2266fed3d33a1cf32681f3c839261450100b7c38",
+      "forbidden_code_matches": {}
+    },
+    {
+      "file": "outputs/fuglede/CubeSampling.lean",
+      "sha256": "9177c93eca664693ef1c37528549f6e99140f8b0a2b7f18c47a21cb28e1d4197",
+      "forbidden_code_matches": {}
+    },
+    {
+      "file": "outputs/fuglede/FiniteNontile.lean",
+      "sha256": "31a0b7fba8612e5d202aaa95f50b1288ca0f3493e4db8935f9d2c6da5b76d8c3",
+      "forbidden_code_matches": {}
+    },
+    {
+      "file": "outputs/fuglede/FiniteSpectral.lean",
+      "sha256": "6841f5b2e3e849b1ea62d5ae8292c2e701b85196d41f0fbed5c6106b4ac55ef7",
+      "forbidden_code_matches": {}
+    },
+    {
+      "file": "outputs/fuglede/FiniteSpectralSeeds.lean",
+      "sha256": "5d0bb922c6909650910485cc2f12b22606dcf95e643cf65b12d92e086267081c",
+      "forbidden_code_matches": {}
+    },
+    {
+      "file": "outputs/fuglede/FiniteTiling.lean",
+      "sha256": "e9c886ba7bab1a2a85ca546a7668649ca6ed750a2684dc767aaa05e77d4cd183",
+      "forbidden_code_matches": {}
+    },
+    {
+      "file": "outputs/fuglede/FourierCube.lean",
+      "sha256": "49fd4a091813738b540171acb075d831388881f5b14844757696d0340026b7f5",
+      "forbidden_code_matches": {}
+    },
+    {
+      "file": "outputs/fuglede/FugledeCounterexample.lean",
+      "sha256": "27e08226448eb23f150ec7e95e48c6f98e1ce7bcce8b8b26d9add0b65c55aa44",
+      "forbidden_code_matches": {}
+    },
+    {
+      "file": "outputs/fuglede/SpectralCubeBridge.lean",
+      "sha256": "c9f358915ef874eb77c36fde2df583a98a30da74cffc966576a4bbaed5482b05",
+      "forbidden_code_matches": {}
+    },
+    {
+      "file": "outputs/fuglede/SpectralSlices.lean",
+      "sha256": "a37df2a8af1d436052fda3e1bb905a147c117386f03f2f79b863e023e93832f3",
+      "forbidden_code_matches": {}
+    },
+    {
+      "file": "outputs/fuglede/TilingTransfer.lean",
+      "sha256": "30ff463031f651c9ac265ab228728e0784023a352ad624a536ff7f84dc4233aa",
+      "forbidden_code_matches": {}
+    }
+  ],
+  "new_endpoint_import_check": {
+    "argv": [
+      "<LOCAL_WORKSPACE>/work/toolchains/lean-4.34.1-darwin_aarch64/bin/lean",
+      "-DwarningAsError=true",
+      "-Ddebug.skipKernelTC=false",
+      "--stdin"
+    ],
+    "cwd": "<LOCAL_WORKSPACE>/work/fuglede-reproduction",
+    "LEAN_PATH": "<LOCAL_WORKSPACE>/work/fuglede-reproduction/.lake/build/lib/lean:<LOCAL_WORKSPACE>/work/fuglede-reproduction/.lake/packages/LeanSearchClient/.lake/build/lib/lean:<LOCAL_WORKSPACE>/work/fuglede-reproduction/.lake/packages/Qq/.lake/build/lib/lean:<LOCAL_WORKSPACE>/work/fuglede-reproduction/.lake/packages/aesop/.lake/build/lib/lean:<LOCAL_WORKSPACE>/work/fuglede-reproduction/.lake/packages/batteries/.lake/build/lib/lean:<LOCAL_WORKSPACE>/work/fuglede-reproduction/.lake/packages/importGraph/.lake/build/lib/lean:<LOCAL_WORKSPACE>/work/fuglede-reproduction/.lake/packages/mathlib/.lake/build/lib/lean:<LOCAL_WORKSPACE>/work/fuglede-reproduction/.lake/packages/plausible/.lake/build/lib/lean:<LOCAL_WORKSPACE>/work/fuglede-reproduction/.lake/packages/proofwidgets/.lake/build/lib/lean",
+    "lean_stdin": "import FugledeCounterexample\nset_option Elab.async false\nset_option debug.skipKernelTC false\nset_option pp.proofs false\nopen Set MeasureTheory\nexample : FugledeTarget.spectralPair FugledeConcrete.omega FugledeCounterexample.spectrum := FugledeCounterexample.omega_spectralPair\nexample : volume FugledeConcrete.omega = 564540 := FugledeConcrete.omega_volume\nexample : ∃ Ω : Set (Fin 2 → ℝ), Bornology.IsBounded Ω ∧ MeasurableSet Ω ∧ 0 < volume Ω ∧ volume Ω ≠ ⊤ ∧ FugledeTarget.isSpectral Ω ∧ ¬ FugledeTarget.tilesByTranslation Ω := FugledeCounterexample.exists_bounded_measurable_spectral_nontile\nexample : ¬ FugledeTarget.FugledeConjectureFor 2 := FugledeCounterexample.not_FugledeConjectureFor_two\nexample : FugledeTarget.CompleteTwoDimensionalTarget := FugledeCounterexample.completeTwoDimensionalTarget\nexample : ¬ (FugledeTarget.FugledeConjectureFor 1 ∧ FugledeTarget.FugledeConjectureFor 2) := FugledeCounterexample.not_joint_dimension_one_and_two\n#print FugledeTarget.spectralPair\n#print FugledeTarget.tilesByTranslation\n#print FugledeTarget.FugledeConjectureFor\n#print FugledeCounterexample.omega_spectralPair\n#print FugledeCounterexample.exists_bounded_measurable_spectral_nontile\n#print FugledeCounterexample.not_FugledeConjectureFor_two\n#print axioms FugledeCounterexample.omega_spectralPair\n#print axioms FugledeCounterexample.omega_isSpectral\n#print axioms FugledeCounterexample.exists_bounded_measurable_spectral_nontile\n#print axioms FugledeCounterexample.not_FugledeConjectureFor_two\n#print axioms FugledeCounterexample.completeTwoDimensionalTarget\n#print axioms FugledeCounterexample.not_joint_dimension_one_and_two\n",
+    "exit_code": null,
+    "stdout": "",
+    "stderr": "Direct Lean import timed out after 60 seconds.",
+    "uses_existing_independent_reproduction_oleans": true,
+    "fresh_proof_source_rebuild_performed_by_this_agent": false,
+    "status": "inconclusive_timeout_before_output"
+  },
+  "endpoint_transitive_axioms": {
+    "FugledeCounterexample.omega_spectralPair": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeCounterexample.omega_isSpectral": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeCounterexample.exists_bounded_measurable_spectral_nontile": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeCounterexample.not_FugledeConjectureFor_two": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeCounterexample.completeTwoDimensionalTarget": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeCounterexample.not_joint_dimension_one_and_two": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "tool_environment_note": {
+    "lake_env_startup": "Timed out after 60 seconds before spawning Lean. subprocess.run terminated only its own lake process.",
+    "fallback": "Use fixed toolchain Lean directly with explicit pinned dependency/build LEAN_PATH; source not modified.",
+    "fallback_result": "Direct Lean import also timed out at 60 seconds; no output. The direct Lean process was terminated by subprocess timeout. No other agent process was terminated."
+  },
+  "blockers": [],
+  "limits": [
+    "Target definitions and proof interfaces/analytic chain were directly read. This is not a fresh human line-by-line review of every finite combinatorial derivation.",
+    "Separate agent handles requested clean source rebuild.",
+    "No prize scope acceptance, novelty, journal acceptance, global priority, merged PR, eligibility, or award claim is certified.",
+    "Mathematical construction is credited to Tao Zhang; this is Lean formalization."
+  ],
+  "semantic_review_passed": true,
+  "new_runtime_recheck_passed": false,
+  "endpoint_axiom_evidence_origin": "Historical exact-release fresh source build, release-verification.json; this agent attempted a new import but current runtime timed out before output.",
+  "historical_exact_release_build_evidence": {
+    "file": "outputs/fuglede/release-verification.json",
+    "sha256": "85c016b5e259ab35cf66fd3c02f5ed0ab3a348d6ef13677e0510b4d51f37120d",
+    "status": "exact_release_sources_fresh_build_pass",
+    "actual_exit_code": 0,
+    "all_16_proof_modules_and_Audit_built_from_empty_own_build_tree": true,
+    "warnings_as_errors": true,
+    "debug_skipKernelTC": false
+  },
+  "runtime_recheck_obstructions": [
+    "Both lake env and direct fixed Lean import timed out after 60 seconds without new type/axiom output. The Lean --version probe returned the expected 4.34.1 immediately. A separate build agent observed a file read startup issue. No new successful import or rebuild is asserted."
+  ],
+  "historical_endpoint_axiom_evidence": {
+    "file": "outputs/fuglede/reproduction-audit.json",
+    "sha256": "e6ca7e18d52fb1e0c937cb90809d1d6ad076c6c3758127ea1e2eda84cb7a73ad",
+    "endpoint_count": 6,
+    "comments_only_changes_afterward": "The exact-release build separately rechecked the attribution-comment-only changes with the same standard axiom set."
+  }
+}

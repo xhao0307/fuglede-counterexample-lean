@@ -1,0 +1,19 @@
+import FugledeCounterexample
+set_option debug.skipKernelTC false
+
+#print FugledeTarget.spectralPair
+#print FugledeTarget.FugledeConjectureFor
+#print FugledeTarget.CompleteTwoDimensionalTarget
+
+#check FugledeCounterexample.omega_spectralPair
+#print axioms FugledeCounterexample.omega_spectralPair
+#check FugledeCounterexample.omega_isSpectral
+#print axioms FugledeCounterexample.omega_isSpectral
+#check FugledeCounterexample.exists_bounded_measurable_spectral_nontile
+#print axioms FugledeCounterexample.exists_bounded_measurable_spectral_nontile
+#check FugledeCounterexample.not_FugledeConjectureFor_two
+#print axioms FugledeCounterexample.not_FugledeConjectureFor_two
+#check FugledeCounterexample.completeTwoDimensionalTarget
+#print axioms FugledeCounterexample.completeTwoDimensionalTarget
+#check FugledeCounterexample.not_joint_dimension_one_and_two
+#print axioms FugledeCounterexample.not_joint_dimension_one_and_two

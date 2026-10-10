@@ -1,0 +1,185 @@
+ℹ [3460/3478] Built CubeSampling (7.4s)
+info: CubeSampling.lean:129:0: 'FugledeCube.coordinate_membership' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CubeSampling.lean:130:0: 'FugledeCube.sampling_membership' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CubeSampling.lean:131:0: 'FugledeCube.integerTiles_of_unique_sampling' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CubeSampling.lean:132:0: 'FugledeCube.integerTiles_of_countable_tiling' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [3461/3478] Built CanonicalDefinitions (7.6s)
+ℹ [3462/3478] Built TilingTransfer (8.8s)
+info: TilingTransfer.lean:800:0: 'FugledeTransfer.packed_translates_card_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: TilingTransfer.lean:801:0: 'FugledeTransfer.exists_avoiding_translates' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: TilingTransfer.lean:802:0: 'FugledeTransfer.mem_meetingCenters' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: TilingTransfer.lean:803:0: 'FugledeTransfer.translates_pairwise_disjoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: TilingTransfer.lean:804:0: 'FugledeTransfer.local_partition_descends' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: TilingTransfer.lean:805:0: 'FugledeTransfer.exists_large_counting_square' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: TilingTransfer.lean:806:0: 'FugledeTransfer.card_boundaryRing' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: TilingTransfer.lean:807:0: 'FugledeTransfer.block_tiling_meeting_card_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: TilingTransfer.lean:808:0: 'FugledeTransfer.exists_ring_avoiding_origin' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: TilingTransfer.lean:809:0: 'FugledeTransfer.periodic_block_card_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: TilingTransfer.lean:810:0: 'FugledeTransfer.observation_box_inside_block' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: TilingTransfer.lean:811:0: 'FugledeTransfer.rectangular_tiling_descent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: TilingTransfer.lean:812:0: 'FugledeTransfer.quotient_cell_representatives' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: TilingTransfer.lean:813:0: 'FugledeTransfer.latticeBlock_nontiling' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: TilingTransfer.lean:814:0: 'FugledeTransfer.blockCopies_eq_latticeBlock' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: TilingTransfer.lean:815:0: 'FugledeTransfer.card_blockCopies' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: TilingTransfer.lean:816:0: 'FugledeTransfer.blockCopies_nontiling' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: TilingTransfer.lean:817:0: 'FugledeTransfer.sixty_point_block97_nontiling' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: TilingTransfer.lean:819:0: 'FugledeTransfer.card_translate' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: TilingTransfer.lean:820:0: 'FugledeTransfer.mem_translate' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: TilingTransfer.lean:821:0: 'FugledeTransfer.unique_center_of_direct_tiling' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: TilingTransfer.lean:822:0: 'FugledeTransfer.counting_square_gap_of_large' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: TilingTransfer.lean:823:0: 'FugledeTransfer.mem_rectangle' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: TilingTransfer.lean:824:0: 'FugledeTransfer.card_rectangle' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: TilingTransfer.lean:825:0: 'FugledeTransfer.block_translate_contained_of_meeting' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: TilingTransfer.lean:826:0: 'FugledeTransfer.coordinate_cell_index_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: TilingTransfer.lean:827:0: 'FugledeTransfer.grid_cell_indices_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: TilingTransfer.lean:828:0: 'FugledeTransfer.grid_cell_inside_block' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: TilingTransfer.lean:829:0: 'FugledeTransfer.coordinate_representative' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: TilingTransfer.lean:830:0: 'FugledeTransfer.coordinate_block_decomposition' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3463/3478] Built CubeGeometry (2.0s)
+info: CubeGeometry.lean:114:0: 'FugledeCube.measurableSet_cubeUnion' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CubeGeometry.lean:115:0: 'FugledeCube.cubeAt_pairwise_disjoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CubeGeometry.lean:116:0: 'FugledeCube.volume_cubeUnion' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CubeGeometry.lean:117:0: 'FugledeCube.isBounded_cubeUnion' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3464/3478] Built FiniteSpectralSeeds (11s)
+info: FiniteSpectralSeeds.lean:353:0: 'FugledeSeeds.product_character_gram' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: FiniteSpectralSeeds.lean:354:0: 'FugledeSeeds.actual_character_gram' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: FiniteSpectralSeeds.lean:355:0: 'FugledeSeeds.Aplus_Lplus_finite_spectral_pair' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: FiniteSpectralSeeds.lean:356:0: 'FugledeSeeds.every_function_expansion' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3465/3478] Built SpectralSlices (3.0s)
+info: SpectralSlices.lean:181:0: 'FugledeSlices.cube_translation_preserving' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: SpectralSlices.lean:182:0: 'FugledeSlices.slice_memLp' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: SpectralSlices.lean:183:0: 'FugledeSlices.weightedSlice_memLp' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: SpectralSlices.lean:184:0: 'FugledeSlices.weightedSlices_memLp' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: SpectralSlices.lean:185:0: 'FugledeSlices.weightedSlices_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: SpectralSlices.lean:186:0: 'FugledeSlices.character_weight_memLp' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: SpectralSlices.lean:187:0: 'FugledeSlices.integral_union_eq_sum_slices' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: SpectralSlices.lean:188:0: 'FugledeSlices.integral_unionLp_eq_sum_slices' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: SpectralSlices.lean:189:0: 'FugledeSlices.integral_character_weight_eq_integral_weightedSlices' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [3466/3478] Built FourierCube (4.4s)
+info: FourierCube.lean:137:0: 'FugledeFourier.eq_zero_of_integer_fourier_integrals' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: FourierCube.lean:138:0: 'FugledeFourier.ae_eq_zero_of_integer_fourier_integrals' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: FourierCube.lean:139:0: 'FugledeFourier.torusMap_measurePreserving' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: FourierCube.lean:140:0: 'FugledeFourier.pullback_fourierCoeff' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3467/3478] Built BlockSpectrum (4.7s)
+info: BlockSpectrum.lean:470:0: 'FugledeBlockSpectrum.grid_character_product' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: BlockSpectrum.lean:471:0: 'FugledeBlockSpectrum.grid_character_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: BlockSpectrum.lean:472:0: 'FugledeBlockSpectrum.grid_character_gram' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: BlockSpectrum.lean:473:0: 'FugledeBlockSpectrum.replicated_gram_factor' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: BlockSpectrum.lean:474:0: 'FugledeBlockSpectrum.replicated_spectral_gram' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: BlockSpectrum.lean:475:0: 'FugledeBlockSpectrum.cis_add' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: BlockSpectrum.lean:476:0: 'FugledeBlockSpectrum.cis_int' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: BlockSpectrum.lean:477:0: 'FugledeBlockSpectrum.conj_cis_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: BlockSpectrum.lean:478:0: 'FugledeBlockSpectrum.gridCharacter_eq_cis' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: BlockSpectrum.lean:479:0: 'FugledeBlockSpectrum.expanded_character_factor' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: BlockSpectrum.lean:480:0: 'FugledeBlockSpectrum.expanded_spectral_gram' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: BlockSpectrum.lean:481:0: 'FugledeBlockSpectrum.analysis_block_synthesis' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: BlockSpectrum.lean:482:0: 'FugledeBlockSpectrum.blockSynthesis_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: BlockSpectrum.lean:483:0: 'FugledeBlockSpectrum.blockSynthesis_surjective' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: BlockSpectrum.lean:484:0: 'FugledeBlockSpectrum.every_expanded_function_expansion' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: BlockSpectrum.lean:485:0: 'FugledeBlockSpectrum.expandedPoint_injective_of_gram' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: BlockSpectrum.lean:486:0: 'FugledeBlockSpectrum.expandedFrequency_injective_of_gram' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: BlockSpectrum.lean:487:0: 'FugledeBlockSpectrum.baseCharacter_seedLift' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: BlockSpectrum.lean:488:0: 'FugledeBlockSpectrum.seed_base_gram' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: BlockSpectrum.lean:489:0: 'FugledeBlockSpectrum.seed_expanded_gram' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: BlockSpectrum.lean:490:0: 'FugledeBlockSpectrum.seed_every_expanded_function' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: BlockSpectrum.lean:491:0: 'FugledeBlockSpectrum.seedBlockPoint_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: BlockSpectrum.lean:492:0: 'FugledeBlockSpectrum.seedBlockFrequency_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: BlockSpectrum.lean:493:0: 'FugledeBlockSpectrum.seed97_gram' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: BlockSpectrum.lean:494:0: 'FugledeBlockSpectrum.seed97_every_function' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3468/3478] Built CubeCharacters (3.6s)
+info: CubeCharacters.lean:128:0: 'FugledeCharacters.character_add_frequency' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CubeCharacters.lean:129:0: 'FugledeCharacters.character_add_point' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CubeCharacters.lean:130:0: 'FugledeCharacters.character_integer_integer' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CubeCharacters.lean:131:0: 'FugledeCharacters.character_frequency_shift' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CubeCharacters.lean:132:0: 'FugledeCharacters.character_conj_product' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CubeCharacters.lean:133:0: 'FugledeCharacters.weightedSlices_frequency_shift' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CubeCharacters.lean:134:0: 'FugledeCharacters.coefficient_eq_weightedSlices_fourier' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3469/3478] Built SpectralCubeBridge (4.5s)
+info: SpectralCubeBridge.lean:172:0: 'FugledeSpectralBridge.inner_e_eq_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: SpectralCubeBridge.lean:173:0: 'FugledeSpectralBridge.finite_coefficients_detect_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: SpectralCubeBridge.lean:174:0: 'FugledeSpectralBridge.eq_zero_of_all_shifted_coefficients' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: SpectralCubeBridge.lean:175:0: 'FugledeSpectralBridge.spectrum_closedSpan_top' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3470/3478] Built CubeOrthogonality (5.7s)
+info: CubeOrthogonality.lean:186:0: 'FugledeOrthogonality.unitCube_integer_gram' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CubeOrthogonality.lean:187:0: 'FugledeOrthogonality.e_inner_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CubeOrthogonality.lean:188:0: 'FugledeOrthogonality.integral_union_gram_factor' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CubeOrthogonality.lean:189:0: 'FugledeOrthogonality.e_shifted_gram' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CubeOrthogonality.lean:190:0: 'FugledeOrthogonality.e_shifted_inner_eq_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CubeOrthogonality.lean:191:0: 'FugledeOrthogonality.frequency_shift_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3471/3478] Built FiniteNontile (26s)
+info: FiniteNontile.lean:399:0: 'FugledeNontile.row_parity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: FiniteNontile.lean:400:0: 'FugledeNontile.quotient_parity_obstruction' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: FiniteNontile.lean:401:0: 'FugledeNontile.no_common_complement' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: FiniteNontile.lean:402:0: 'FugledeNontile.Aplus_no_complement' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3472/3478] Built ConcreteNontile (3.4s)
+info: ConcreteNontile.lean:129:0: 'FugledeConcrete.pairBlock_nontile' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ConcreteNontile.lean:130:0: 'FugledeConcrete.omega_nontile' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ConcreteNontile.lean:131:0: 'FugledeConcrete.omega_volume' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ConcreteNontile.lean:132:0: 'FugledeConcrete.omega_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ConcreteNontile.lean:133:0: 'FugledeConcrete.omega_bounded' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3473/3478] Built FiniteSpectral (4.4s)
+info: FiniteSpectral.lean:69:0: 'FugledeSpectral.Aplus_eq_nontile' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: FiniteSpectral.lean:70:0: 'FugledeSpectral.finiteSpectralGram' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: FiniteSpectral.lean:71:0: 'FugledeSpectral.Aplus_Lplus_finite_spectral_pair' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: FiniteSpectral.lean:72:0: 'FugledeSpectral.every_function_expansion' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: FiniteSpectral.lean:73:0: 'FugledeSpectral.Aplus_no_complement' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3474/3478] Built ConcreteSpectrum (5.1s)
+info: ConcreteSpectrum.lean:113:0: 'FugledeConcreteSpectrum.point_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ConcreteSpectrum.lean:114:0: 'FugledeConcreteSpectrum.frequency_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ConcreteSpectrum.lean:115:0: 'FugledeConcreteSpectrum.seedBlockPoint_mem_pairBlock' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ConcreteSpectrum.lean:116:0: 'FugledeConcreteSpectrum.point_mem_vectorBlock' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ConcreteSpectrum.lean:117:0: 'FugledeConcreteSpectrum.point_image_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ConcreteSpectrum.lean:118:0: 'FugledeConcreteSpectrum.point_image_eq_vectorBlock' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ConcreteSpectrum.lean:119:0: 'FugledeConcreteSpectrum.character_at_point' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ConcreteSpectrum.lean:120:0: 'FugledeConcreteSpectrum.finite_gram' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ConcreteSpectrum.lean:121:0: 'FugledeConcreteSpectrum.finite_expansion' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3475/3478] Built FugledeCounterexample (3.5s)
+info: FugledeCounterexample.lean:79:0: 'FugledeCounterexample.omega_spectralPair' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: FugledeCounterexample.lean:80:0: 'FugledeCounterexample.exists_bounded_measurable_spectral_nontile' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: FugledeCounterexample.lean:81:0: 'FugledeCounterexample.not_FugledeConjectureFor_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: FugledeCounterexample.lean:82:0: 'FugledeCounterexample.completeTwoDimensionalTarget' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: FugledeCounterexample.lean:83:0: 'FugledeCounterexample.not_joint_dimension_one_and_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3477/3478] Built Audit (4.4s)
+info: Audit.lean:4:0: def FugledeTarget.spectralPair : {d : ℕ} → Set (Fin d → ℝ) → Set (Fin d → ℝ) → Prop :=
+fun {d} Ω Λ =>
+  MeasureTheory.NullMeasurableSet Ω MeasureTheory.volume ∧
+    0 < MeasureTheory.volume Ω ∧
+      ∃ (hΩ_finite : MeasureTheory.volume Ω ≠ ⊤),
+        have e := fun ξ => MeasureTheory.MemLp.toLp (FugledeTarget.exponentialCharacter ξ) ⋯;
+        (∀ ξ₁ ∈ Λ, ∀ ξ₂ ∈ Λ, ξ₁ ≠ ξ₂ → inner ℂ (e ξ₁) (e ξ₂) = 0) ∧
+          (Submodule.span ℂ (Set.range fun ξ => e ↑ξ)).topologicalClosure = ⊤
+info: Audit.lean:5:0: def FugledeTarget.FugledeConjectureFor : ℕ → Prop :=
+fun d =>
+  ∀ (Ω : Set (Fin d → ℝ)),
+    Bornology.IsBounded Ω →
+      MeasurableSet Ω → 0 < MeasureTheory.volume Ω → (FugledeTarget.isSpectral Ω ↔ FugledeTarget.tilesByTranslation Ω)
+info: Audit.lean:6:0: def FugledeTarget.CompleteTwoDimensionalTarget : Prop :=
+¬FugledeTarget.FugledeConjectureFor 2
+info: Audit.lean:8:0: FugledeCounterexample.omega_spectralPair :
+  FugledeTarget.spectralPair FugledeConcrete.omega FugledeCounterexample.spectrum
+info: Audit.lean:9:0: 'FugledeCounterexample.omega_spectralPair' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Audit.lean:10:0: FugledeCounterexample.omega_isSpectral : FugledeTarget.isSpectral FugledeConcrete.omega
+info: Audit.lean:11:0: 'FugledeCounterexample.omega_isSpectral' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Audit.lean:12:0: FugledeCounterexample.exists_bounded_measurable_spectral_nontile :
+  ∃ Ω,
+    Bornology.IsBounded Ω ∧
+      MeasurableSet Ω ∧
+        0 < MeasureTheory.volume Ω ∧
+          MeasureTheory.volume Ω ≠ ⊤ ∧ FugledeTarget.isSpectral Ω ∧ ¬FugledeTarget.tilesByTranslation Ω
+info: Audit.lean:13:0: 'FugledeCounterexample.exists_bounded_measurable_spectral_nontile' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: Audit.lean:14:0: FugledeCounterexample.not_FugledeConjectureFor_two : ¬FugledeTarget.FugledeConjectureFor 2
+info: Audit.lean:15:0: 'FugledeCounterexample.not_FugledeConjectureFor_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Audit.lean:16:0: FugledeCounterexample.completeTwoDimensionalTarget : FugledeTarget.CompleteTwoDimensionalTarget
+info: Audit.lean:17:0: 'FugledeCounterexample.completeTwoDimensionalTarget' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Audit.lean:18:0: FugledeCounterexample.not_joint_dimension_one_and_two :
+  ¬(FugledeTarget.FugledeConjectureFor 1 ∧ FugledeTarget.FugledeConjectureFor 2)
+info: Audit.lean:19:0: 'FugledeCounterexample.not_joint_dimension_one_and_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (3478 jobs).
+
+ACTUAL_EXIT 0

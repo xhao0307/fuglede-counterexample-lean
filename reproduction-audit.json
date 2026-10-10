@@ -1,0 +1,657 @@
+{
+  "status": "independent-standalone-fresh-build-pass",
+  "pass": true,
+  "project_directory": "<LOCAL_WORKSPACE>/work/fuglede-reproduction",
+  "no_original_formal_oleans_used": true,
+  "own_source_copy_pending_final_freeze": true,
+  "dependency_checkouts": [
+    {
+      "name": "mathlib",
+      "official_url": "https://github.com/leanprover-community/mathlib4.git",
+      "revision": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+      "source_clone": "git clone --shared --no-checkout; checkout --detach pinned revision",
+      "shared_git_objects_only": true,
+      "source_checkout_independent": true,
+      "copied_existing_build_objects": false
+    },
+    {
+      "name": "plausible",
+      "official_url": "https://github.com/leanprover-community/plausible",
+      "revision": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+      "source_clone": "git clone --shared --no-checkout; checkout --detach pinned revision",
+      "shared_git_objects_only": true,
+      "source_checkout_independent": true,
+      "copied_existing_build_objects": false
+    },
+    {
+      "name": "LeanSearchClient",
+      "official_url": "https://github.com/leanprover-community/LeanSearchClient",
+      "revision": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+      "source_clone": "git clone --shared --no-checkout; checkout --detach pinned revision",
+      "shared_git_objects_only": true,
+      "source_checkout_independent": true,
+      "copied_existing_build_objects": false
+    },
+    {
+      "name": "importGraph",
+      "official_url": "https://github.com/leanprover-community/import-graph",
+      "revision": "e928b72544873815af278d38681b31c0293588e3",
+      "source_clone": "git clone --shared --no-checkout; checkout --detach pinned revision",
+      "shared_git_objects_only": true,
+      "source_checkout_independent": true,
+      "copied_existing_build_objects": false
+    },
+    {
+      "name": "proofwidgets",
+      "official_url": "https://github.com/leanprover-community/ProofWidgets4",
+      "revision": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+      "source_clone": "git clone --shared --no-checkout; checkout --detach pinned revision",
+      "shared_git_objects_only": true,
+      "source_checkout_independent": true,
+      "copied_existing_build_objects": false
+    },
+    {
+      "name": "aesop",
+      "official_url": "https://github.com/leanprover-community/aesop",
+      "revision": "355695d523e41d0554926416cba2a2b3544fbbc9",
+      "source_clone": "git clone --shared --no-checkout; checkout --detach pinned revision",
+      "shared_git_objects_only": true,
+      "source_checkout_independent": true,
+      "copied_existing_build_objects": false
+    },
+    {
+      "name": "Qq",
+      "official_url": "https://github.com/leanprover-community/quote4",
+      "revision": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+      "source_clone": "git clone --shared --no-checkout; checkout --detach pinned revision",
+      "shared_git_objects_only": true,
+      "source_checkout_independent": true,
+      "copied_existing_build_objects": false
+    },
+    {
+      "name": "batteries",
+      "official_url": "https://github.com/leanprover-community/batteries",
+      "revision": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+      "source_clone": "git clone --shared --no-checkout; checkout --detach pinned revision",
+      "shared_git_objects_only": true,
+      "source_checkout_independent": true,
+      "copied_existing_build_objects": false
+    },
+    {
+      "name": "Cli",
+      "official_url": "https://github.com/leanprover/lean4-cli",
+      "revision": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+      "source_clone": "git clone --shared --no-checkout; checkout --detach pinned revision",
+      "shared_git_objects_only": true,
+      "source_checkout_independent": true,
+      "copied_existing_build_objects": false
+    }
+  ],
+  "dependency_clone_duration_seconds": 13.028244018554688,
+  "third_party_cache_policy": "Upstream Mathlib .ltar cache reuse/download is permitted; no third-party full source rebuild claim. All our modules must be rebuilt fresh.",
+  "toolchain": "<LOCAL_WORKSPACE>/work/toolchains/lean-4.34.1-darwin_aarch64/bin",
+  "pending": [],
+  "lake_update": {
+    "actual_exit_code": 0,
+    "duration_seconds": 43.832637786865234,
+    "command": [
+      "<LOCAL_WORKSPACE>/work/toolchains/lean-4.34.1-darwin_aarch64/bin/lake",
+      "update"
+    ],
+    "MATHLIB_NO_CACHE_ON_UPDATE": "1",
+    "log": "work/fuglede-reproduction/dependency-update.log"
+  },
+  "pinned_manifest_verified": true,
+  "manifest_packages": [
+    {
+      "url": "https://github.com/leanprover-community/mathlib4.git",
+      "type": "git",
+      "subDir": null,
+      "scope": "",
+      "rev": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+      "name": "mathlib",
+      "manifestFile": "lake-manifest.json",
+      "inputRev": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+      "inherited": false,
+      "configFile": "lakefile.lean"
+    },
+    {
+      "url": "https://github.com/leanprover-community/plausible",
+      "type": "git",
+      "subDir": null,
+      "scope": "leanprover-community",
+      "rev": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+      "name": "plausible",
+      "manifestFile": "lake-manifest.json",
+      "inputRev": "main",
+      "inherited": true,
+      "configFile": "lakefile.toml"
+    },
+    {
+      "url": "https://github.com/leanprover-community/LeanSearchClient",
+      "type": "git",
+      "subDir": null,
+      "scope": "leanprover-community",
+      "rev": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+      "name": "LeanSearchClient",
+      "manifestFile": "lake-manifest.json",
+      "inputRev": "main",
+      "inherited": true,
+      "configFile": "lakefile.toml"
+    },
+    {
+      "url": "https://github.com/leanprover-community/import-graph",
+      "type": "git",
+      "subDir": null,
+      "scope": "leanprover-community",
+      "rev": "e928b72544873815af278d38681b31c0293588e3",
+      "name": "importGraph",
+      "manifestFile": "lake-manifest.json",
+      "inputRev": "main",
+      "inherited": true,
+      "configFile": "lakefile.toml"
+    },
+    {
+      "url": "https://github.com/leanprover-community/ProofWidgets4",
+      "type": "git",
+      "subDir": null,
+      "scope": "leanprover-community",
+      "rev": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+      "name": "proofwidgets",
+      "manifestFile": "lake-manifest.json",
+      "inputRev": "main",
+      "inherited": true,
+      "configFile": "lakefile.lean"
+    },
+    {
+      "url": "https://github.com/leanprover-community/aesop",
+      "type": "git",
+      "subDir": null,
+      "scope": "leanprover-community",
+      "rev": "355695d523e41d0554926416cba2a2b3544fbbc9",
+      "name": "aesop",
+      "manifestFile": "lake-manifest.json",
+      "inputRev": "master",
+      "inherited": true,
+      "configFile": "lakefile.toml"
+    },
+    {
+      "url": "https://github.com/leanprover-community/quote4",
+      "type": "git",
+      "subDir": null,
+      "scope": "leanprover-community",
+      "rev": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+      "name": "Qq",
+      "manifestFile": "lake-manifest.json",
+      "inputRev": "master",
+      "inherited": true,
+      "configFile": "lakefile.toml"
+    },
+    {
+      "url": "https://github.com/leanprover-community/batteries",
+      "type": "git",
+      "subDir": null,
+      "scope": "leanprover-community",
+      "rev": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+      "name": "batteries",
+      "manifestFile": "lake-manifest.json",
+      "inputRev": "main",
+      "inherited": true,
+      "configFile": "lakefile.toml"
+    },
+    {
+      "url": "https://github.com/leanprover/lean4-cli",
+      "type": "git",
+      "subDir": null,
+      "scope": "leanprover",
+      "rev": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+      "name": "Cli",
+      "manifestFile": "lake-manifest.json",
+      "inputRev": "v4.34.0",
+      "inherited": true,
+      "configFile": "lakefile.toml"
+    }
+  ],
+  "dependency_cache": {
+    "command": [
+      "<LOCAL_WORKSPACE>/work/toolchains/lean-4.34.1-darwin_aarch64/bin/lake",
+      "exe",
+      "cache",
+      "get",
+      "Mathlib.Algebra.BigOperators.Fin",
+      "Mathlib.Algebra.Group.Fin.Basic",
+      "Mathlib.Algebra.Order.BigOperators.Group.Finset",
+      "Mathlib.Algebra.Order.Floor.Ring",
+      "Mathlib.Analysis.Fourier.AddCircleMulti",
+      "Mathlib.Analysis.Fourier.FiniteAbelian.Orthogonality",
+      "Mathlib.Analysis.InnerProductSpace.Projection.Submodule",
+      "Mathlib.Analysis.SpecialFunctions.Complex.Circle",
+      "Mathlib.Analysis.SpecialFunctions.Complex.CircleAddChar",
+      "Mathlib.Data.Fin.Basic",
+      "Mathlib.Data.Fin.VecNotation",
+      "Mathlib.Data.Finset.Basic",
+      "Mathlib.Data.Finset.Card",
+      "Mathlib.Data.Finset.Prod",
+      "Mathlib.Data.Fintype.Card",
+      "Mathlib.Data.Fintype.Prod",
+      "Mathlib.Data.Int.Interval",
+      "Mathlib.Data.ZMod.Basic",
+      "Mathlib.LinearAlgebra.FiniteDimensional.Basic",
+      "Mathlib.MeasureTheory.Function.L2Space",
+      "Mathlib.MeasureTheory.Group.Measure",
+      "Mathlib.MeasureTheory.Integral.Bochner.Basic",
+      "Mathlib.MeasureTheory.Integral.Bochner.Set",
+      "Mathlib.MeasureTheory.Measure.Lebesgue.Basic",
+      "Mathlib.RingTheory.Polynomial.Cyclotomic.Expand",
+      "Mathlib.Tactic.Abel",
+      "Mathlib.Tactic.Continuity",
+      "Mathlib.Tactic.FieldSimp",
+      "Mathlib.Tactic.FinCases",
+      "Mathlib.Tactic.Linarith",
+      "Mathlib.Tactic.NormNum",
+      "Mathlib.Tactic.Ring",
+      "Mathlib.Topology.Bornology.Constructions"
+    ],
+    "cwd": "<LOCAL_WORKSPACE>/work/fuglede-reproduction",
+    "MATHLIB_CACHE_DIR": "<LOCAL_WORKSPACE>/work/mathlib-cache",
+    "started_at_unix": 1791597954.416149,
+    "targeted_root_import_count": 33,
+    "third_party_cache_reused": true,
+    "full_third_party_source_build": false,
+    "fresh_cache_tool_build": true,
+    "actual_exit_code": 0,
+    "duration_seconds": 69.20175409317017,
+    "log": "work/fuglede-reproduction/dependency-cache.log"
+  },
+  "our_source_receipts": [
+    {
+      "module": "CanonicalDefinitions",
+      "file": "CanonicalDefinitions.lean",
+      "source_sha256": "2d6ff7d2676ec627ca2deffe21efa835c08a42a4963aca79e842cbbfdbdfb97a",
+      "bytes": 3396,
+      "original_sha256_matches": true,
+      "copied_olean": false,
+      "forbidden_code_tokens": []
+    },
+    {
+      "module": "CubeSampling",
+      "file": "CubeSampling.lean",
+      "source_sha256": "9177c93eca664693ef1c37528549f6e99140f8b0a2b7f18c47a21cb28e1d4197",
+      "bytes": 5804,
+      "original_sha256_matches": true,
+      "copied_olean": false,
+      "forbidden_code_tokens": []
+    },
+    {
+      "module": "CubeGeometry",
+      "file": "CubeGeometry.lean",
+      "source_sha256": "6f87d46b08bdaa22f6c5ba52a9c812a2787845e770d12e1b1b43ce5fb0d5de46",
+      "bytes": 4213,
+      "original_sha256_matches": true,
+      "copied_olean": false,
+      "forbidden_code_tokens": []
+    },
+    {
+      "module": "FiniteNontile",
+      "file": "FiniteNontile.lean",
+      "source_sha256": "31a0b7fba8612e5d202aaa95f50b1288ca0f3493e4db8935f9d2c6da5b76d8c3",
+      "bytes": 17952,
+      "original_sha256_matches": true,
+      "copied_olean": false,
+      "forbidden_code_tokens": []
+    },
+    {
+      "module": "TilingTransfer",
+      "file": "TilingTransfer.lean",
+      "source_sha256": "30ff463031f651c9ac265ab228728e0784023a352ad624a536ff7f84dc4233aa",
+      "bytes": 39650,
+      "original_sha256_matches": true,
+      "copied_olean": false,
+      "forbidden_code_tokens": []
+    },
+    {
+      "module": "FiniteSpectralSeeds",
+      "file": "FiniteSpectralSeeds.lean",
+      "source_sha256": "5d0bb922c6909650910485cc2f12b22606dcf95e643cf65b12d92e086267081c",
+      "bytes": 15548,
+      "original_sha256_matches": true,
+      "copied_olean": false,
+      "forbidden_code_tokens": []
+    },
+    {
+      "module": "FiniteSpectral",
+      "file": "FiniteSpectral.lean",
+      "source_sha256": "6841f5b2e3e849b1ea62d5ae8292c2e701b85196d41f0fbed5c6106b4ac55ef7",
+      "bytes": 2960,
+      "original_sha256_matches": true,
+      "copied_olean": false,
+      "forbidden_code_tokens": []
+    },
+    {
+      "module": "ConcreteNontile",
+      "file": "ConcreteNontile.lean",
+      "source_sha256": "a18f5f3c307ec6aebaff7bfc5d33036e0fa31f32fc99aa5d0a3ff93fd5b96424",
+      "bytes": 5429,
+      "original_sha256_matches": true,
+      "copied_olean": false,
+      "forbidden_code_tokens": []
+    },
+    {
+      "module": "BlockSpectrum",
+      "file": "BlockSpectrum.lean",
+      "source_sha256": "c3f1491913030513de8f4ba60685c5bdcb2a094af3a05d855c9f6dae983460cc",
+      "bytes": 21124,
+      "original_sha256_matches": true,
+      "copied_olean": false,
+      "forbidden_code_tokens": []
+    },
+    {
+      "module": "ConcreteSpectrum",
+      "file": "ConcreteSpectrum.lean",
+      "source_sha256": "59d3e6478853ff46fec6a96b2c2b077cbb9b810f6414f0b9fd0def26b4ebac4f",
+      "bytes": 5478,
+      "original_sha256_matches": true,
+      "copied_olean": false,
+      "forbidden_code_tokens": []
+    },
+    {
+      "module": "FourierCube",
+      "file": "FourierCube.lean",
+      "source_sha256": "2946ac794fcc883dd99ebb93ad606965813287b90574cd5002a5170f5a51a149",
+      "bytes": 6686,
+      "original_sha256_matches": true,
+      "copied_olean": false,
+      "forbidden_code_tokens": []
+    },
+    {
+      "module": "SpectralSlices",
+      "file": "SpectralSlices.lean",
+      "source_sha256": "a37df2a8af1d436052fda3e1bb905a147c117386f03f2f79b863e023e93832f3",
+      "bytes": 9137,
+      "original_sha256_matches": true,
+      "copied_olean": false,
+      "forbidden_code_tokens": []
+    },
+    {
+      "module": "CubeCharacters",
+      "file": "CubeCharacters.lean",
+      "source_sha256": "ce2ab35e55ff529c9413f44a579edb5cdbc43d8e5f56c1b69f4f6b3d11bf58f2",
+      "bytes": 5775,
+      "original_sha256_matches": true,
+      "copied_olean": false,
+      "forbidden_code_tokens": []
+    },
+    {
+      "module": "CubeOrthogonality",
+      "file": "CubeOrthogonality.lean",
+      "source_sha256": "cebf5bf1c55c4b20f4dcc2caf6a0e50014423fd65c121eb5ef51317dbe81e417",
+      "bytes": 9014,
+      "original_sha256_matches": true,
+      "copied_olean": false,
+      "forbidden_code_tokens": []
+    },
+    {
+      "module": "SpectralCubeBridge",
+      "file": "SpectralCubeBridge.lean",
+      "source_sha256": "c9f358915ef874eb77c36fde2df583a98a30da74cffc966576a4bbaed5482b05",
+      "bytes": 8110,
+      "original_sha256_matches": true,
+      "copied_olean": false,
+      "forbidden_code_tokens": []
+    },
+    {
+      "module": "FugledeCounterexample",
+      "file": "FugledeCounterexample.lean",
+      "source_sha256": "27e08226448eb23f150ec7e95e48c6f98e1ce7bcce8b8b26d9add0b65c55aa44",
+      "bytes": 4081,
+      "original_sha256_matches": true,
+      "copied_olean": false,
+      "forbidden_code_tokens": []
+    }
+  ],
+  "our_source_copy_pending_final_freeze": false,
+  "fresh_our_build_tree_before_copy": true,
+  "project_library": "FugledeCounterexample, with all 16 root modules explicitly registered for fresh building",
+  "audit_source_sha256": "e66f4ac7a5bf481d645f169156d9065bc959aa226853900450b77ac51e8b071a",
+  "lakefile_sha256": "e3646261f2b1650084024dfc60d3c18fb750a261654a99fc37f4dbdca37e60f2",
+  "fresh_build": {
+    "command": [
+      "<LOCAL_WORKSPACE>/work/toolchains/lean-4.34.1-darwin_aarch64/bin/lake",
+      "build",
+      "FugledeCounterexample",
+      "Audit"
+    ],
+    "cwd": "<LOCAL_WORKSPACE>/work/fuglede-reproduction",
+    "started_at_unix": 1791598109.91468,
+    "our_modules_fresh_from_zero": true,
+    "warnings_as_errors": true,
+    "kernelTCfalse_global": true,
+    "actual_exit_code": 0,
+    "duration_seconds": 48.18401503562927,
+    "log": "work/fuglede-reproduction/fresh-build.log",
+    "log_sha256": "5b9a1a6f68c6e32d0f55dfe0e04a0f7a96238d25ec3699b553805d73a4d6449e"
+  },
+  "portable_commands": "MATHLIB_NO_CACHE_ON_UPDATE=1 lake update\nlake exe cache get \\\n  Mathlib.Algebra.BigOperators.Fin Mathlib.Algebra.Group.Fin.Basic Mathlib.Algebra.Order.BigOperators.Group.Finset \\\n  Mathlib.Algebra.Order.Floor.Ring Mathlib.Analysis.Fourier.AddCircleMulti Mathlib.Analysis.Fourier.FiniteAbelian.Orthogonality \\\n  Mathlib.Analysis.InnerProductSpace.Projection.Submodule Mathlib.Analysis.SpecialFunctions.Complex.Circle Mathlib.Analysis.SpecialFunctions.Complex.CircleAddChar \\\n  Mathlib.Data.Fin.Basic Mathlib.Data.Fin.VecNotation Mathlib.Data.Finset.Basic \\\n  Mathlib.Data.Finset.Card Mathlib.Data.Finset.Prod Mathlib.Data.Fintype.Card \\\n  Mathlib.Data.Fintype.Prod Mathlib.Data.Int.Interval Mathlib.Data.ZMod.Basic \\\n  Mathlib.LinearAlgebra.FiniteDimensional.Basic Mathlib.MeasureTheory.Function.L2Space Mathlib.MeasureTheory.Group.Measure \\\n  Mathlib.MeasureTheory.Integral.Bochner.Basic Mathlib.MeasureTheory.Integral.Bochner.Set Mathlib.MeasureTheory.Measure.Lebesgue.Basic \\\n  Mathlib.RingTheory.Polynomial.Cyclotomic.Expand Mathlib.Tactic.Abel Mathlib.Tactic.Continuity \\\n  Mathlib.Tactic.FieldSimp Mathlib.Tactic.FinCases Mathlib.Tactic.Linarith \\\n  Mathlib.Tactic.NormNum Mathlib.Tactic.Ring Mathlib.Topology.Bornology.Constructions\nlake build FugledeCounterexample Audit\n",
+  "portable_commands_file": "work/fuglede-reproduction/BUILD.md",
+  "config_files": {
+    "lakefile.toml": {
+      "path": "work/fuglede-reproduction/lakefile.toml",
+      "sha256": "e3646261f2b1650084024dfc60d3c18fb750a261654a99fc37f4dbdca37e60f2"
+    },
+    "lake-manifest.json": {
+      "path": "work/fuglede-reproduction/lake-manifest.json",
+      "sha256": "440db61264070a63f929f47f9d47dc1c9f065ec84eecdecc5979e4b81a16e338"
+    },
+    "lean-toolchain": {
+      "path": "work/fuglede-reproduction/lean-toolchain",
+      "sha256": "d5edba4e4b8faad9c1baeadb265716d20d03be4d1a2647dc5e35b0c0325bea7b"
+    },
+    "Audit.lean": {
+      "path": "work/fuglede-reproduction/Audit.lean",
+      "sha256": "e66f4ac7a5bf481d645f169156d9065bc959aa226853900450b77ac51e8b071a"
+    }
+  },
+  "our_fresh_build_outputs": [
+    {
+      "module": "CanonicalDefinitions",
+      "source_sha256": "2d6ff7d2676ec627ca2deffe21efa835c08a42a4963aca79e842cbbfdbdfb97a",
+      "olean_path": "work/fuglede-reproduction/.lake/build/lib/lean/CanonicalDefinitions.olean",
+      "olean_sha256": "73b484ae03342805ade94ebbbed001728cf4160292d2a2b9fea081c9a1325a72",
+      "bytes": 143136,
+      "mtime_unix": 1791598121.0806282,
+      "fresh_build_log_confirmed": true
+    },
+    {
+      "module": "CubeSampling",
+      "source_sha256": "9177c93eca664693ef1c37528549f6e99140f8b0a2b7f18c47a21cb28e1d4197",
+      "olean_path": "work/fuglede-reproduction/.lake/build/lib/lean/CubeSampling.olean",
+      "olean_sha256": "2eb7fe02fcc0479fe6e37a1999e05ae1b27a1f3c431accb0ee95048c4cd10b6f",
+      "bytes": 355472,
+      "mtime_unix": 1791598120.7317686,
+      "fresh_build_log_confirmed": true
+    },
+    {
+      "module": "CubeGeometry",
+      "source_sha256": "6f87d46b08bdaa22f6c5ba52a9c812a2787845e770d12e1b1b43ce5fb0d5de46",
+      "olean_path": "work/fuglede-reproduction/.lake/build/lib/lean/CubeGeometry.olean",
+      "olean_sha256": "eca314a67e4f62990fb45fcc71446dc662913b33bb435356817fe855cc8c07ba",
+      "bytes": 198064,
+      "mtime_unix": 1791598123.71096,
+      "fresh_build_log_confirmed": true
+    },
+    {
+      "module": "FiniteNontile",
+      "source_sha256": "31a0b7fba8612e5d202aaa95f50b1288ca0f3493e4db8935f9d2c6da5b76d8c3",
+      "olean_path": "work/fuglede-reproduction/.lake/build/lib/lean/FiniteNontile.olean",
+      "olean_sha256": "c683cc449b77e9f8c36f1bbc14149ecf6fd2752841567e4a45f4e5276bc2c9d0",
+      "bytes": 623336,
+      "mtime_unix": 1791598140.3650913,
+      "fresh_build_log_confirmed": true
+    },
+    {
+      "module": "TilingTransfer",
+      "source_sha256": "30ff463031f651c9ac265ab228728e0784023a352ad624a536ff7f84dc4233aa",
+      "olean_path": "work/fuglede-reproduction/.lake/build/lib/lean/TilingTransfer.olean",
+      "olean_sha256": "51d5df80178d2265319ef667d2cd45a1729101cbdeca3e4f79b67dfdc792982c",
+      "bytes": 2373744,
+      "mtime_unix": 1791598122.1540706,
+      "fresh_build_log_confirmed": true
+    },
+    {
+      "module": "FiniteSpectralSeeds",
+      "source_sha256": "5d0bb922c6909650910485cc2f12b22606dcf95e643cf65b12d92e086267081c",
+      "olean_path": "work/fuglede-reproduction/.lake/build/lib/lean/FiniteSpectralSeeds.olean",
+      "olean_sha256": "35215e809d33e19d45b06aa27edc16ce38ef15c7f3ee16dfa4ec40f8b03fe5d1",
+      "bytes": 776504,
+      "mtime_unix": 1791598125.0673683,
+      "fresh_build_log_confirmed": true
+    },
+    {
+      "module": "FiniteSpectral",
+      "source_sha256": "6841f5b2e3e849b1ea62d5ae8292c2e701b85196d41f0fbed5c6106b4ac55ef7",
+      "olean_path": "work/fuglede-reproduction/.lake/build/lib/lean/FiniteSpectral.olean",
+      "olean_sha256": "ef03876029af6b29f366c9178d9dbcc44bb81017e2efdc20e3b639d49063f044",
+      "bytes": 53552,
+      "mtime_unix": 1791598144.7941797,
+      "fresh_build_log_confirmed": true
+    },
+    {
+      "module": "ConcreteNontile",
+      "source_sha256": "a18f5f3c307ec6aebaff7bfc5d33036e0fa31f32fc99aa5d0a3ff93fd5b96424",
+      "olean_path": "work/fuglede-reproduction/.lake/build/lib/lean/ConcreteNontile.olean",
+      "olean_sha256": "4005c537738512750872206ffa97273fc8e3bd8c6ead2ad687599cbc89f39e29",
+      "bytes": 262944,
+      "mtime_unix": 1791598143.7968414,
+      "fresh_build_log_confirmed": true
+    },
+    {
+      "module": "BlockSpectrum",
+      "source_sha256": "c3f1491913030513de8f4ba60685c5bdcb2a094af3a05d855c9f6dae983460cc",
+      "olean_path": "work/fuglede-reproduction/.lake/build/lib/lean/BlockSpectrum.olean",
+      "olean_sha256": "e3afa4af50afb3482bd755603df1cc0860338882561ebbace1812ca70d7d13b9",
+      "bytes": 844424,
+      "mtime_unix": 1791598129.7289832,
+      "fresh_build_log_confirmed": true
+    },
+    {
+      "module": "ConcreteSpectrum",
+      "source_sha256": "59d3e6478853ff46fec6a96b2c2b077cbb9b810f6414f0b9fd0def26b4ebac4f",
+      "olean_path": "work/fuglede-reproduction/.lake/build/lib/lean/ConcreteSpectrum.olean",
+      "olean_sha256": "5d5320705203938818aeea6719856f7327327f5df131d9216b04ddd717ca7e6c",
+      "bytes": 111904,
+      "mtime_unix": 1791598149.9177651,
+      "fresh_build_log_confirmed": true
+    },
+    {
+      "module": "FourierCube",
+      "source_sha256": "2946ac794fcc883dd99ebb93ad606965813287b90574cd5002a5170f5a51a149",
+      "olean_path": "work/fuglede-reproduction/.lake/build/lib/lean/FourierCube.olean",
+      "olean_sha256": "6bf7257874f524fa98d9377a0be5c32a77f11c56b241c4636a657a84a897f8c0",
+      "bytes": 302896,
+      "mtime_unix": 1791598128.1306036,
+      "fresh_build_log_confirmed": true
+    },
+    {
+      "module": "SpectralSlices",
+      "source_sha256": "a37df2a8af1d436052fda3e1bb905a147c117386f03f2f79b863e023e93832f3",
+      "olean_path": "work/fuglede-reproduction/.lake/build/lib/lean/SpectralSlices.olean",
+      "olean_sha256": "4a0b22c99d2b8dd706192f839494672fa1c4e3356a75bbcbbcfc929f41ccaca8",
+      "bytes": 166768,
+      "mtime_unix": 1791598127.6715705,
+      "fresh_build_log_confirmed": true
+    },
+    {
+      "module": "CubeCharacters",
+      "source_sha256": "ce2ab35e55ff529c9413f44a579edb5cdbc43d8e5f56c1b69f4f6b3d11bf58f2",
+      "olean_path": "work/fuglede-reproduction/.lake/build/lib/lean/CubeCharacters.olean",
+      "olean_sha256": "c39b67e7b8087c4bf3f459ac9352349e64549d577b78ccf7637fbc979ecd8097",
+      "bytes": 200000,
+      "mtime_unix": 1791598131.730308,
+      "fresh_build_log_confirmed": true
+    },
+    {
+      "module": "CubeOrthogonality",
+      "source_sha256": "cebf5bf1c55c4b20f4dcc2caf6a0e50014423fd65c121eb5ef51317dbe81e417",
+      "olean_path": "work/fuglede-reproduction/.lake/build/lib/lean/CubeOrthogonality.olean",
+      "olean_sha256": "cbdaf320b115bb2b5e35435d8c9bdf2f89eee145de25dd4de9f901bf04a16b45",
+      "bytes": 322832,
+      "mtime_unix": 1791598137.399413,
+      "fresh_build_log_confirmed": true
+    },
+    {
+      "module": "SpectralCubeBridge",
+      "source_sha256": "c9f358915ef874eb77c36fde2df583a98a30da74cffc966576a4bbaed5482b05",
+      "olean_path": "work/fuglede-reproduction/.lake/build/lib/lean/SpectralCubeBridge.olean",
+      "olean_sha256": "feabd31411dc4591dd52938a9ad5aa6e4b943d75d6cdbfef10419e2e3df398bb",
+      "bytes": 277424,
+      "mtime_unix": 1791598136.217738,
+      "fresh_build_log_confirmed": true
+    },
+    {
+      "module": "FugledeCounterexample",
+      "source_sha256": "27e08226448eb23f150ec7e95e48c6f98e1ce7bcce8b8b26d9add0b65c55aa44",
+      "olean_path": "work/fuglede-reproduction/.lake/build/lib/lean/FugledeCounterexample.olean",
+      "olean_sha256": "ddea713371f58589ee11b822a633f0af85e60ef5bc31e79867300590488fc126",
+      "bytes": 72672,
+      "mtime_unix": 1791598153.4479818,
+      "fresh_build_log_confirmed": true
+    }
+  ],
+  "endpoint_axiom_audit": {
+    "FugledeCounterexample.omega_spectralPair": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeCounterexample.omega_isSpectral": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeCounterexample.exists_bounded_measurable_spectral_nontile": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeCounterexample.not_FugledeConjectureFor_two": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeCounterexample.completeTwoDimensionalTarget": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FugledeCounterexample.not_joint_dimension_one_and_two": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "audit_output": {
+    "final_types_printed": true,
+    "canonical_definitions_printed": [
+      "spectralPair",
+      "FugledeConjectureFor",
+      "CompleteTwoDimensionalTarget"
+    ],
+    "endpoint_count": 6,
+    "extra_mathematical_premises_in_final_endpoints": false,
+    "Audit_olean_sha256": "20781181f91807606b994570787e53b5f20a5720ebd5a5d03346e3705b8c4c9c"
+  },
+  "build_limits": {
+    "third_party_dependency_source_fresh_rebuild": false,
+    "third_party_cache": "3443 existing official upstream .ltar cache files decompressed by freshly source-built Cache CLI at exact Mathlib/dependency pins. No dependency proof objects copied from any old .lake/build directory.",
+    "our_source_fresh_rebuild": true,
+    "our_module_count": 16,
+    "our_Audit_fresh_rebuild": true,
+    "formal_directory_proof_objects_reused": false,
+    "source_checkouts": "Independent checked out working trees; only Git object storage shared.",
+    "kernel_typechecking": "Globally set debug.skipKernelTC=false and warningsAsError=true in root package moreLeanArgs, with no true override in mathematical source.",
+    "full_target": "The canonical two-dimensional bounded measurable Fuglede equivalence is refuted; the independent one-dimensional variant remains open here."
+  },
+  "compiler_version": "Lean (version 4.34.1, arm64-apple-darwin24.6.0, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "final_theorem_source_sha256": "27e08226448eb23f150ec7e95e48c6f98e1ce7bcce8b8b26d9add0b65c55aa44",
+  "final_theorem_fresh_olean_sha256": "ddea713371f58589ee11b822a633f0af85e60ef5bc31e79867300590488fc126"
+}
